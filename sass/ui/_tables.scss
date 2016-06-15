@@ -1,0 +1,318 @@
+/*
+* Table
+*/
+table {
+  margin-top      : 10px;
+  width           : 100%;
+  border          : none;
+  border-spacing  : 0;
+  border-collapse : collapse;
+  vertical-align  : middle;
+  line-height     : 1.5;
+  color      : $font-main-color;
+  background : $white-l1;
+  word-break : break-all;
+  text-align : left;
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  tr:only-child {
+    border-bottom: 1px solid $border-color-gray;
+  }
+  
+  tr:nth-child(even){
+    background: #eee;
+  }
+  
+  th, td {
+    position: relative;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    @include colorGrade($white-l1, $gray-l2, vertical);
+    @include fs(11);
+    padding     : 8px;
+    color       : $tableThColor;
+    font-weight : $font-weight-bold;
+    border-top  : 1px solid $border-color-gray;
+    border-left : 1px solid $border-color-gray;
+    border-right: 1px solid $border-color-gray;
+  }
+  
+  td{
+    position   : relative;
+    text-align : left;
+    padding    : 8px;
+    border     : 1px solid $border-color-gray;
+  }
+  
+  .no-result {
+    @include fs(18);
+    padding: 40px 0!important;
+    font-weight: $font-weight-bold;
+    color: $font-sub-color;
+    text-align: center;
+  }
+  
+  // table Size List
+  .cell-w-50  { width:  50px; }
+  .cell-w-70  { width:  70px; }
+  .cell-w-75  { width:  75px; }
+  .cell-w-88  { width:  88px; }
+  .cell-w-90  { width:  90px; }
+  .cell-w-100 { width: 100px; }
+  .cell-w-110 { width: 110px; }
+  .cell-w-120 { width: 120px; }
+  .cell-w-130 { width: 130px; }
+  .cell-w-150 { width: 150px; }
+  .cell-w-155 { width: 155px; }
+  .cell-w-160 { width: 160px; }
+  .cell-w-180 { width: 180px; }
+  .cell-w-185 { width: 185px; }
+  .cell-w-210 { width: 210px; }
+  .cell-w-240 { width: 240px; }
+  .cell-w-250 { width: 250px; }
+  .cell-w-260 { width: 260px; }
+  .cell-w-278 { width: 278px; }
+  .cell-w-280 { width: 280px; }
+  .cell-w-300 { width: 300px; }
+  .cell-w-400 { width: 400px; }
+}
+
+/** button cell style **/
+ul.table-cell-btns{
+  width: 100%;
+
+  // Clear fix do not compass cf;
+  *zoom: 1;
+  &:before,
+  &:after { content: " "; display: table; clear: both; }
+
+  &.col1{
+    li.cell-btn{
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  &.col2{
+    li.cell-btn{
+      width: 48%;
+    }
+  }
+
+  &.col3{
+    li.cell-btn{
+      width: 32%;
+      margin: 0 0 0 2%;
+    }
+  }
+
+  &.col-camp-tags{
+    li.cell-btn.edit{
+      width: 32%;
+    }
+    li.cell-btn.tags{
+      width: 66%;
+      a{
+        padding: 0;
+        @include fs(10);
+      }
+    }
+  }
+  
+  li a {
+    font-weight: normal !important;
+  }
+
+  li.cell-btn {
+    float: left;
+    &:first-child { margin: 0; }
+    &:last-child  { margin: 0; float: right; }
+    &:only-child  { margin: 0; width: 100%; float: none; }
+  }
+}
+
+
+// campaign page table 
+table.layout-table {
+  padding: 0;
+  td { padding: 0; }
+}
+
+// キャンペーンページ キャンペーン表示用
+table.campaign-table {
+  margin: 0;
+  background: transparent;
+
+  td {
+    border: none;
+    padding: 8px;
+    border-right: 1px solid #CCC;
+  }
+
+  td:last-child {
+    border-right: none;
+  }
+
+  .open {
+    padding: 0 !important;
+    display: table-cell;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .progress-bar {
+    margin: 10px 0 0 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 4px;
+    background: #CCC;
+    display: block;
+
+    span {
+      width: 0;
+      height: 5px;
+      background: $progress-bar-blue;
+      display: block;
+    }
+
+    span.over {
+      background: $progress-bar-red;
+    }
+  }
+
+  tr:nth-child(even) .progress-bar {
+    background: #FFF;
+  }
+
+  .progress-num {
+    @include clearfix;
+    @include fs(9);
+    margin: 10px 0 0 0;
+    width: 100%;
+    .min {
+      float: left;
+    }
+    .max {
+      float: right;
+    }
+  }
+}
+
+// キャンペーンページ タグ表示用
+table.tags-table{
+  margin: 0;
+  th, td{
+    border: none;
+  }
+  thead {
+    tr:first-child {
+      border-bottom: 1px solid $border-color-gray;
+    }
+    th {
+      border-right: 1px solid $border-color-gray;
+      border-top: 1px solid $border-color-gray;
+      padding: 3px 0 4px 8px;
+    }
+    th:last-child {
+      border-right: none !important;
+    }
+    th.gsm-pd {
+      width: 56px;
+      padding: 3px 8px 4px 8px !important;
+    }
+    th.gsm-td-witdh1 {
+      width: 278px;
+    }
+    th.gsm-td-witdh2 {
+      width: 209px;
+    }
+    th.gsm-td-witdh5 {
+      width: 156px;
+    }
+  }
+
+  tbody{
+    tr {
+      height: 34px;
+      border-bottom: 1px solid $border-color-gray;
+    }
+    tr:last-child {
+      border-bottom: none !important;
+    }
+    td {
+      border-right: 1px solid $border-color-gray;
+    }
+    td:last-child {
+      border-right: none !important;
+    }
+  }
+}
+
+// レポート 2連テーブル 表示用 
+.report-tabel-container {
+  @include clearfix;
+  margin: 10px 0 0 0;
+  
+  .date-inner {
+    width: 16%;
+    float: left;
+  }
+
+  .detail-inner {
+    width: 84%;
+    float: right;
+    overflow: auto;
+  }
+}
+
+
+/**
+** Invoice create table Style
+**/
+.invoice-create-table {
+  margin: 10px 0 0 0;
+
+  .out-info {
+    color: $invoice-table-color ;
+  }
+
+  tr.text-hover:hover{
+    @extend %cursor;
+    background: $darken-blue !important;
+
+    a {
+      @extend %cursor;
+      font-weight: $font-weight-bold;
+      color: $white-l1 !important;
+    }
+  }
+}
+
+/**
+** log management table Style
+**/
+table.dailyCountLog-table {
+  td.view-memo { cursor: pointer; }
+  td p:nth-child(-n + 2) { display: block; }
+  td p.active { display: block; }
+  td p { display: none; }
+}
+
+/**
+** forecast table Style
+**/
+table.sales-forecast-data-table{
+  th {
+    @extend %cursor;
+  }
+}
+
+

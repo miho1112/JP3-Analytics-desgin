@@ -1,0 +1,69 @@
+/**
+* Setting Sass
+* ---------------
+* 全体の設定値を記述
+*/
+
+// Bg Color
+$bgColor : #fcfcfc;
+
+// Color
+$white            : #fff;
+$black            : #000;
+$gray             : #555555;
+$lightGray        : #8e8d8d;
+$darkGray         : #545454;
+
+// Border Color
+$borderLightGray  : #cccccc;
+$borderDarkGray   : #595959;
+$borderRed        : #bb1e1e;
+
+// Btn Color
+$btnRed           : #fb6767;
+$btnRedLight      : #ff8d8d;
+$btnGreen         : #00985d;
+$btnGreenLight    : #5ecea2;
+$btnBlue          : #6795fb;
+$btnBlueLight     : #9ebbfd;
+
+$btnPlus          : #3baa62;
+$btnHover         : #eaeaea;
+
+// Nav Color
+$navGray          : #616161;
+
+// Gradation
+$gradationBlue    : #1b7392;
+$gradationGreen   : #5fb463;
+$gradationGray    : #efefef;
+$gradationDarkGray: #e0e0e0;
+
+// Arrow Color
+$arrowGray        : #b3b3b3;
+
+// Table Color
+$tableThColor     : #ededed;
+$tableFontColor   : #7d7d7d;
+$tableFontGray    : #7a7a7a;
+$tableTrColor     : #eeeeee;
+
+// Chart Color
+$chartLineColor   : #c7c7c7;
+$chartFontColor   : #5b5b5b;
+
+// Search btn
+$searchBtnColor    : #f1f1f1;
+$searchHoverColor : #e1e1e1;
+
+//Icon Plus
+@font-face {
+  font-family: 'icomoon';
+  src:    url('fonts/icomoon.eot?dk5sj6');
+  src:    url('fonts/icomoon.eot?dk5sj6#iefix') format('embedded-opentype'),
+  url('fonts/icomoon.ttf?dk5sj6') format('truetype'),
+  url('fonts/icomoon.woff?dk5sj6') format('woff'),
+  url('fonts/icomoon.svg?dk5sj6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,5 @@
+/* Tooltips */
+
+.ttip {
+	@include tooltip($tt-min-width, $tt-bgcolor, $tt-position, $tt-align);
+}

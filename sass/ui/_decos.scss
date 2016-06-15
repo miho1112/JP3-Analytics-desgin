@@ -1,0 +1,40 @@
+/*
+* decorations
+*/
+
+// Arrow 
+// 主にテーブルで利用しているArrow set
+.arrow{
+  cursor: pointer;
+  &:after {
+    width  : 0;
+    height : 0;
+    border-style: solid;
+    content : "";
+    display : inline-block;
+    position: relative;
+    top     : 7px;
+    float   : right;
+  }
+
+  &.top:after {
+    border-width: 0 3px 5px 3px;
+    border-color: transparent transparent $gray-l8 transparent;
+  }
+
+  &.right:after {
+    border-width: 3px 0 3px 5px;
+    border-color: transparent transparent transparent $gray-l8;
+  }
+
+  &.bottom:after {
+    border-width: 5px 3px 0 3px;
+    border-color: $gray-l8 transparent transparent transparent;;
+  }
+
+  &.left:after {
+    border-width: 3px 5px 3px 0;
+    border-color: transparent $gray-l8 transparent transparent;
+  }
+
+}

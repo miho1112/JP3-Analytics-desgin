@@ -1,0 +1,68 @@
+/* Icons */
+
+//iconround-icon
+.round-icon{
+  &:before{
+    content:" ";
+    display:inline-block;
+    position: relative;
+  }
+  &.small{
+    &:before {
+      width: 6px;
+      height: 6px;
+      border-radius: 3px;
+      top: -1px;
+      margin: 0 3px 0 0;
+    }
+  }
+  &.normal{
+    &:before {
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+      margin: 0 4px 0 0;
+    }
+  }
+  &.large{
+    &:before {
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      margin: 0px 6px 0 0;
+      top: 1px;
+    }
+  }
+  &.blue {
+    &:before {
+      background: $blue;
+    }
+  }
+  &.yellow {
+    &:before {
+      background: $yellow;
+    }
+  }
+  &.red {
+    &:before {
+      background: $red;
+    }
+  }
+}
+
+
+// 降順
+.ascending {
+  &:after {
+    @include tableArrow(0, 3px, 5px, #7a7a7a, bottom);
+    float: right;
+  }
+}
+
+//昇順
+.descending{
+  &:after {
+    @include tableArrow(0, 3px, 5px, #7a7a7a, top);
+    float: right;
+  }
+}

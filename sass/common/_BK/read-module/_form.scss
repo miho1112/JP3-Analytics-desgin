@@ -1,0 +1,223 @@
+/*
+#overview
+from
+
+フォームサンプルのサンプルです
+*/
+
+
+
+/*#styleguide
+
+
+サーチフォーム(Large)
+
+```
+<form class="search large" action="/" name="search" method="post">
+  <dl>
+    <dt>
+      <input type="text" name="search" value="" placeholder="Search">
+    </dt>
+    <dd>
+      <button>
+        <i class="icon icon-search large color-gray btn-icon-position"></i>
+      </button>
+    </dd>
+  </dl>
+</form>
+```
+*/
+
+
+/*#styleguide
+
+
+サーチフォーム、アイコン違い(Small)
+
+```
+<form class="search small" action="/" name="search" method="post">
+  <dl>
+    <dt>
+      <input type="text" name="search" value="" placeholder="Search">
+    </dt>
+    <dd>
+      <button>
+        <i class="icon icon-search2 large color-gray btn-icon-position"></i>
+      </button>
+    </dd>
+  </dl>
+</form>
+```
+*/
+
+
+/*#styleguide
+
+
+グラデーション + 角丸(JP3)
+
+```
+<form class="search small border" action="/" name="search" method="post">
+  <dl>
+    <dt>
+      <input type="text" name="search" value="" placeholder="search input">
+    </dt>
+    <dd class="grade">
+      <button>
+        <a>検索</a>
+      </button>
+    </dd>
+  </dl>
+</form>
+```
+*/
+
+
+/*
+* Search Btn
+*/
+form.search {
+
+  // Border radius
+  &.border {
+
+    dl {
+      border-radius: 4px;
+    }
+  }
+
+  // Large
+  &.large {
+    height: 38px;
+
+    dt {
+      height: 36px;
+
+      input {
+        font-size: 14px;
+        padding: 7px;
+      }
+    }
+
+    dd {
+      height: 36px;
+
+      button {
+        background: $searchBtnColor;
+
+        &:hover {
+          background: $searchHoverColor;
+        }
+      }
+    }
+  }
+
+
+  // Small
+  &.small {
+    height: 32px;
+
+    dl {
+      width: 223px;
+
+      dt {
+        width: 161px;
+        height: 30px;
+
+        input {
+          width: 161px;
+          font-size: 14px;
+          padding: 8px;
+        }
+      }
+
+      dd {
+        height: 30px;
+
+        button {
+          background: $searchBtnColor;
+
+          &:hover {
+            background: $searchHoverColor;
+          }
+        }
+      }
+
+      dd.grade {
+        height: 30px;
+        border-left: 1px solid $borderLightGray;
+
+        button {
+          @include colorGrade($white, $gradationGray);
+          //@include grade($gradationGray);
+
+          &:hover {
+            @include colorGrade($white, #e0e0e0);
+            //@include grade(#e0e0e0);
+          }
+        }
+      }
+
+    }
+
+
+  }
+
+
+  dl {
+    @include clearfix;
+    width: 698px;
+    height: inherit;
+    border: 1px solid $borderLightGray;
+
+    dt {
+      float: left;
+      width: 636px;
+
+      input {
+        width: 636px;
+        height: inherit;
+        border: none;
+        outline: none;
+      }
+    }
+
+    dd {
+      height: 30px;
+      border-left: 1px solid $borderLightGray;
+
+      button {
+        @include colorGrade($white, $gradationGray);
+        //@include grade($gradationGray);
+
+        &:hover {
+          @include colorGrade($white, #e0e0e0);
+          //@include grade(#e0e0e0);
+        }
+      }
+    }
+
+    dd {
+      width: 60px;
+      float: right;
+
+      button {
+        width: 100%;
+        height: inherit;
+        border: none;
+        outline: none;
+        padding: 0;
+        position: relative;
+        @extend %cursor;
+        @include btnHoverTransition(.3s);
+
+        a {
+          font-size: 14px;
+          color: $tableFontGray;
+        }
+      }
+    }
+  }
+}
+
+

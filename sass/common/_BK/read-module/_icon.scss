@@ -1,0 +1,931 @@
+/*
+#overview
+icon
+
+アイコンのサンプルです
+*/
+
+
+
+/*#styleguide
+
+Plus
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-plus size color-gray"></i>
+</div>
+
+```
+*/
+.icon-plus:before {
+  content: "\e909";
+}
+
+
+
+/*#styleguide
+
+Close
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-close size color-gray"></i>
+</div>
+
+```
+*/
+.icon-close:before {
+  content: "\e901";
+}
+
+
+
+/*#styleguide
+
+Creative
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-creative size color-gray"></i>
+</div>
+
+```
+*/
+.icon-creative:before {
+  content: "\e902";
+}
+
+
+
+/*#styleguide
+
+Edit
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-edit size color-gray"></i>
+</div>
+
+```
+*/
+.icon-edit:before {
+  content: "\e903";
+}
+
+
+
+/*#styleguide
+
+開始ページ切替矢印(左)
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-page-arrow-left size color-gray"></i>
+</div>
+
+```
+*/
+.icon-page-arrow-left:before {
+  content: "\e904";
+}
+
+
+
+/*#styleguide
+
+最終ページ切替矢印(右)
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-page-arrow-right size color-gray"></i>
+</div>
+
+```
+*/
+.icon-page-arrow-right:before {
+  content: "\e905";
+}
+
+
+
+/*#styleguide
+
+ページ切替矢印(左)
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-arrow-left size color-gray"></i>
+</div>
+
+```
+*/
+.icon-arrow-left:before {
+  content: "\e906";
+}
+
+
+
+/*#styleguide
+
+ページ切替矢印(右)
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-arrow-right size color-gray"></i>
+</div>
+
+```
+*/
+.icon-arrow-right:before {
+  content: "\e907";
+}
+
+
+
+/*#styleguide
+
+Report
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-report size color-gray"></i>
+</div>
+
+```
+*/
+.icon-report:before {
+  content: "\e90a";
+}
+
+
+
+/*#styleguide
+
+Search(SDS用)
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-search size color-gray"></i>
+</div>
+
+```
+*/
+.icon-search:before {
+  content: "\e90b";
+}
+
+
+
+/*#styleguide
+
+Search
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-search2 size color-gray"></i>
+</div>
+
+```
+*/
+.icon-search2:before {
+  content: "\e922";
+}
+
+
+
+/*#styleguide
+
+Zoom in
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-zoom-in size color-gray"></i>
+</div>
+
+```
+*/
+.icon-zoom-in:before {
+  content: "\e923";
+}
+
+
+
+/*#styleguide
+
+Zoom out
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-zoom-out size color-gray"></i>
+</div>
+
+```
+*/
+.icon-zoom-out:before {
+  content: "\e924";
+}
+
+
+
+/*#styleguide
+
+Tag
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-tag size color-gray"></i>
+</div>
+
+```
+*/
+.icon-tag:before {
+  content: "\e90c";
+}
+
+
+
+/*#styleguide
+
+Price tag
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-price-tag size color-gray"></i>
+</div>
+
+```
+*/
+.icon-price-tag:before {
+  content: "\e916";
+}
+
+
+
+
+/*#styleguide
+
+Home
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-home size color-gray"></i>
+</div>
+
+```
+*/
+.icon-home:before {
+  content: "\e900";
+}
+
+
+
+/*#styleguide
+
+Play
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-play size color-gray"></i>
+</div>
+
+```
+*/
+.icon-play:before {
+  content: "\e908";
+}
+
+
+
+/*#styleguide
+
+Book
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-book size color-gray"></i>
+</div>
+
+```
+*/
+.icon-book:before {
+  content: "\e912";
+}
+
+
+
+/*#styleguide
+
+Text
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-file-text size color-gray"></i>
+</div>
+
+```
+*/
+.icon-file-text:before {
+  content: "\e913";
+}
+
+
+/*#styleguide
+
+Zip
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-file-zip size color-gray"></i>
+</div>
+
+```
+*/
+.icon-file-zip:before {
+  content: "\e914";
+}
+
+
+/*#styleguide
+
+Folder open
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-folder-open size color-gray"></i>
+</div>
+
+```
+*/
+.icon-folder-open:before {
+  content: "\e915";
+}
+
+
+
+/*#styleguide
+
+Coin dollar
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-coin-dollar size color-gray"></i>
+</div>
+
+```
+*/
+.icon-coin-dollar:before {
+  content: "\e917";
+}
+
+
+
+/*#styleguide
+
+Coin yen
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-coin-yen size color-gray"></i>
+</div>
+
+```
+*/
+.icon-coin-yen:before {
+  content: "\e918";
+}
+
+
+
+/*#styleguide
+
+Clock
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-clock size color-gray"></i>
+</div>
+
+```
+*/
+.icon-clock:before {
+  content: "\e919";
+}
+
+
+
+/*#styleguide
+
+Calendar
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-calendar size color-gray"></i>
+</div>
+
+```
+*/
+.icon-calendar:before {
+  content: "\e91a";
+}
+
+
+
+/*#styleguide
+
+Display
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-display size color-gray"></i>
+</div>
+
+```
+*/
+.icon-display:before {
+  content: "\e91b";
+}
+
+
+
+/*#styleguide
+
+Mobile
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-mobile size color-gray"></i>
+</div>
+
+```
+*/
+.icon-mobile:before {
+  content: "\e91c";
+}
+
+
+/*#styleguide
+
+Tablet
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-tablet size color-gray"></i>
+</div>
+
+```
+*/
+.icon-tablet:before {
+  content: "\e91d";
+}
+
+
+
+/*#styleguide
+
+TV
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-tv size color-gray"></i>
+</div>
+
+```
+*/
+.icon-tv:before {
+  content: "\e91e";
+}
+
+
+
+/*#styleguide
+
+Bubbles
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-bubbles size color-gray"></i>
+</div>
+
+```
+*/
+.icon-bubbles:before {
+  content: "\e91f";
+}
+
+
+
+/*#styleguide
+
+User
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-user size color-gray"></i>
+</div>
+
+```
+*/
+.icon-user:before {
+  content: "\e90d";
+}
+
+
+/*#styleguide
+
+User plus
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-user-plus size color-gray"></i>
+</div>
+
+```
+*/
+.icon-user-plus:before {
+  content: "\e920";
+}
+
+
+
+/*#styleguide
+
+User minus
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-user-minus size color-gray"></i>
+</div>
+
+```
+*/
+.icon-user-minus:before {
+  content: "\e921";
+}
+
+
+
+/*#styleguide
+
+Lock
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-lock size color-gray"></i>
+</div>
+
+```
+*/
+.icon-lock:before {
+  content: "\e925";
+}
+
+
+
+/*#styleguide
+
+Unlock
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-unlocked size color-gray"></i>
+</div>
+
+```
+*/
+.icon-unlocked:before {
+  content: "\e926";
+}
+
+
+/*#styleguide
+
+Cog
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-cog size color-gray"></i>
+</div>
+
+```
+*/
+.icon-cog:before {
+  content: "\e927";
+}
+
+
+
+/*#styleguide
+
+Dustbox
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-dustbox size color-gray"></i>
+</div>
+
+```
+*/
+.icon-dustbox:before {
+  content: "\e90e";
+}
+
+
+
+/*#styleguide
+
+Cloud download
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-cloud-download size color-gray"></i>
+</div>
+
+```
+*/
+.icon-cloud-download:before {
+  content: "\e928";
+}
+
+
+
+/*#styleguide
+
+Cloud upload
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-cloud-upload size color-gray"></i>
+</div>
+
+```
+*/
+.icon-cloud-upload:before {
+  content: "\e90f";
+}
+
+
+
+/*#styleguide
+
+Sphere
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-sphere size color-gray"></i>
+</div>
+
+```
+*/
+.icon-sphere:before {
+  content: "\e929";
+}
+
+
+
+/*#styleguide
+
+Eye
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-eye size color-gray"></i>
+</div>
+
+```
+*/
+.icon-eye:before {
+  content: "\e910";
+}
+
+
+
+/*#styleguide
+
+Bookmark
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-bookmark size color-gray"></i>
+</div>
+
+```
+*/
+.icon-bookmark:before {
+  content: "\e92a";
+}
+
+
+
+/*#styleguide
+
+Bookmarks
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-bookmarks size color-gray"></i>
+</div>
+
+```
+*/
+.icon-bookmarks:before {
+  content: "\e92b";
+}
+
+
+
+/*#styleguide
+
+Star empty
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-star-empty size color-gray"></i>
+</div>
+
+```
+*/
+.icon-star-empty:before {
+  content: "\e92c";
+}
+
+
+
+/*#styleguide
+
+Arrow up
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-arrow-up size color-gray"></i>
+</div>
+
+```
+*/
+.icon-arrow-up:before {
+  content: "\e92d";
+}
+
+
+
+/*#styleguide
+
+Arrow right
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-arrow-right size color-gray"></i>
+</div>
+
+```
+*/
+.icon-arrow-right:before {
+  content: "\e92e";
+}
+
+
+
+/*#styleguide
+
+Arrow down
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-arrow-down size color-gray"></i>
+</div>
+
+```
+*/
+.icon-arrow-down:before {
+  content: "\e911";
+}
+
+
+
+/*#styleguide
+
+Arrow left
+
+```
+<div class="icon-wrap">
+  <i class="icon icon-arrow-left size color-gray"></i>
+</div>
+
+```
+*/
+.icon-arrow-left:before {
+  content: "\e92f";
+}
+
+
+
+
+
+
+
+
+/*
+* Btn Icon
+*/
+
+.icon-wrap {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.icon-wrap-small {
+  width: 34px;
+  height: 22px;
+  border-left: 1px solid $borderLightGray;
+  display: inline-block;
+  position: absolute;
+  margin: -11px 0 0 0;
+  top: 50%;
+  right: 0;
+}
+.icon-wrap-large {
+  width: 15px;
+  height: inherit;
+  text-indent: 0;
+  display: inline-block;
+  position: absolute;
+  left: 15px;
+  margin-top: -1px;
+}
+
+.icon-arrow-wrap {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+}
+
+i {
+  height: inherit;
+  display: inline-block;
+  position: absolute;
+  @extend %cursor;
+
+  &.icon {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+  // アイコンサイズ
+  &.small {
+    content: '';
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+  }
+  &.middle {
+    content: '';
+    width: 13px;
+    height: 13px;
+    font-size: 13px;
+  }
+  &.large {
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+  }
+
+  // 色
+  &.color-gray {
+    color: $tableFontGray !important;
+  }
+  &.color-light-gray {
+    color: $arrowGray;
+  }
+  &.color-green {
+    color: $btnGreen;
+  }
+
+  // サイズ
+  &.size {
+    content: '';
+    width: 20px;
+    font-size: 20px;
+  }
+
+  &.arrow-size {
+    content: '';
+    width: 26px;
+    font-size: 26px;
+  }
+
+}
+
+
+
+
+
+

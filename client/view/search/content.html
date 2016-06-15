@@ -1,0 +1,47 @@
+<div class="container">
+
+
+  <!-- campaign list -->
+  <div class="campaign">
+
+    <!--<div class="alert danger">-->
+    <div class="danger alert" ng-if="dcam.$serverError">sever error</div>
+
+    <!-- button Area -->
+    <div class="local-nav">
+      <ul>
+        <!--<li>-->
+          <!--<div class="btn icon new add-txt">-->
+            <!--<a href="" class="switch" ng-click="dcam.showModal()"><i></i>{{"app.dashboard.campaign.new" | translate}}</a>-->
+          <!--</div>-->
+        <!--</li>-->
+        <li class="search">
+          <div class="btn-search">
+            <form ng-submit="dcam.search()">
+              <input type="keyword" name="keyword" id="keyword" placeholder="search input" />
+              <div class="btn input-search">
+                <a href="" ng-click="dcam.search()">検索</a>
+              </div>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-contents">
+      <ul>検索方法を選択
+        <li>単体検索</li>
+        <li>比較検索</li>
+      </ul>
+
+      <ul>解析対象を選択
+        <li>キャンペーン</li>
+        <li>クリエイティブ</li>
+        <li>タグ</li>
+      </ul>
+
+    </div>
+  </div>
+  <!-- / campaign list -->
+
+</div>

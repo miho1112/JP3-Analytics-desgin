@@ -1,0 +1,51 @@
+/**
+* Common Sass
+* ---------------
+* 共通 common を記載
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+
+h1, h2, h3, p, table {
+	font-family: "Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+}
+
+// 共通
+h2 {
+	margin: 20px 0 0 0;
+	font-size: 18px;
+    font-weight: normal;
+	color: $navGray;
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: normal;
+  color: $navGray;
+}
+
+// Text
+p {
+	font-size: 16px;
+	color: $darkGray;
+}
+
+
+// Clear Fix
+.cf{ @include clearfix; }
+
+
+// Margin
+.mt10 { margin: 10px 0 0 0; }
+.mt20 { margin: 20px 0 0 0; }
+.mt30 { margin: 30px 0 0 0; }
+.mt50 { margin: 50px 0 0 0; }
+.mb10 { margin: 0 0 10px 0; }
+
+
+// Float
+.fl { float: left; }
+.fr { float: right; }

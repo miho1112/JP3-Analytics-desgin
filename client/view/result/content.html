@@ -1,0 +1,329 @@
+<div class="wrapper">
+
+  <!--nav-->
+  <div class="nav-wrap">
+    <div class="nav-inner">
+      <h2>解析画面</h2>
+      <ul id="nav-tab" class="nav-tab">
+        <li id="tab-0" class="nav-menu active" ng-click="anlc.onClickTabMenu($event)">枠(グループ)の解析効果</li>
+        <li id="tab-1" class="nav-menu" ng-click="anlc.onClickTabMenu($event)">枠(グループ)とブランドのマッチング</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- tab contents -->
+  <ul id="tab-wrapper" class="tab-wrapper">
+    <li id="tab-content-0" class="tab-content active">
+      <ul class="inner-wrap">
+        <!--解析対象-->
+        <li class="contents-wrap">
+          <h3 class="tit">解析対象</h3>
+          <div class="search-contents">
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              サイト枠名を選択<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+            <div class="site_name fl">
+              <p class="flame-name">サイト名サイト名サイト名サイト名サイト名サイト名</p>
+            </div>
+          </div>
+          <div class="search-contents">
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              サイト名を選択<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+            <div class="site_name fl">
+              <p class="flame-name">サイト名サイト名サイト名サイト名サイト名サイト名</p>
+            </div>
+
+          </div>
+          <div class="search-contents">
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              カスタム枠の検索<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+
+            <div class="site_name fl">
+              <p class="flame-name">サイト名サイト名サイト名サイト名サイト名サイト名</p>
+            </div>
+          </div>
+
+        </li>
+        <!--比較対象-->
+        <li class="contents-wrap">
+          <h3 class="tit">比較対象</h3>
+          <div class="search-contents">
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              サイト枠名を選択<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+            <div class="site_name fl">
+              <p class="flame-name">サイト名サイト名サイト名サイト名サイト名サイト名</p>
+            </div>
+          </div>
+          <div class="search-contents">
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              サイト名を選択<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+            <div class="site_name fl">
+              <p class="flame-name">サイト名サイト名サイト名サイト名サイト名サイト名</p>
+            </div>
+          </div>
+          <div class="search-contents">
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              カスタム枠の検索<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+            <div class="site_name fl">
+              <p class="flame-name">サイト名サイト名サイト名サイト名サイト名サイト名</p>
+            </div>
+          </div>
+
+        </li>
+        <!--解析条件-->
+        <li class="contents-wrap">
+          <h3 class="tit">解析条件</h3>
+          <div class="search-contents">
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              案件業種指定<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+            <div class="site_name fl">
+              <p class="flame-name">サイト名サイト名サイト名サイト名サイト名サイト名</p>
+            </div>
+          </div>
+          <div class="search-contents">
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              サイト名を選択<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+            <div class="site_name fl">
+              <p class="flame-name">サイト名サイト名サイト名サイト名サイト名サイト名</p>
+            </div>
+          </div>
+          <div class="search-contents">
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              期間・時間指定<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+            <div class="site_name fl">
+              <p class="flame-name">2016/4/1 - 2016/4/30</p>
+            </div>
+          </div>
+          <div class="search-contents">
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              デバイス指定<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+            <div class="site_name fl">
+              <p class="flame-name">Android OS 5.1</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!--検索表示ボタン-->
+      <div class="btn-wrap">
+        <button class="select-btn btn-inner middle rounded green" ng-click="anlc.onclick()">結果表示</button>
+      </div>
+
+    </li>
+    <li id="tab-content-1" class="tab-content">
+      <ul class="inner-wrap">
+        <!--解析対象-->
+        <li class="contents-wrap">
+          <h3 class="tit">マッチング解析対象</h3>
+          <div class="search-contents">
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              サイト枠名を選択<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+            <div class="site_name fl">
+              <p class="flame-name">サイト名サイト名サイト名サイト名サイト名サイト名</p>
+            </div>
+          </div>
+          <div class="search-contents">
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              サイト名を選択<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+            <div class="site_name fl">
+              <p class="flame-name">サイト名サイト名サイト名サイト名サイト名サイト名</p>
+            </div>
+
+          </div>
+          <div class="search-contents">
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              カスタム枠の検索<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+
+            <div class="site_name fl">
+              <p class="flame-name">サイト名サイト名サイト名サイト名サイト名サイト名</p>
+            </div>
+          </div>
+
+        </li>
+        <!--比較対象-->
+        <li class="contents-wrap">
+          <h3 class="tit">マッチング解析対象比較対象</h3>
+          <div class="search-contents">
+
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              サイト枠名を選択<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+
+            <div class="site_name fl">
+              <p class="flame-name">サイト名サイト名サイト名サイト名サイト名サイト名</p>
+            </div>
+          </div>
+
+          <div class="search-contents">
+
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              サイト名を選択<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+
+            <div class="site_name fl">
+              <p class="flame-name">サイト名サイト名サイト名サイト名サイト名サイト名</p>
+            </div>
+
+          </div>
+          <div class="search-contents">
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              カスタム枠の検索<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+
+            <div class="site_name fl">
+              <p class="flame-name">サイト名サイト名サイト名サイト名サイト名サイト名</p>
+            </div>
+          </div>
+
+        </li>
+        <!--解析条件-->
+        <li class="contents-wrap">
+          <h3 class="tit">マッチング解析条件</h3>
+          <div class="search-contents">
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              案件業種指定<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+            <div class="site_name fl">
+              <p class="flame-name">サイト名サイト名サイト名サイト名サイト名サイト名</p>
+            </div>
+          </div>
+          <div class="search-contents">
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              サイト名を選択<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+            <div class="site_name fl">
+              <p class="flame-name">サイト名サイト名サイト名サイト名サイト名サイト名</p>
+            </div>
+          </div>
+
+          <div class="search-contents">
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              期間・時間指定<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+
+            <div class="site_name fl">
+              <p class="flame-name">2016/4/1 - 2016/4/30</p>
+            </div>
+          </div>
+
+          <div class="search-contents">
+
+            <button class="select-btn btn-inner middle rounded tl fl" ng-click="anlc.onShowModal($event)">
+              デバイス指定<div id="iconBtn" class="icon-wrap-small"><i id="icon" class="icon icon-plus small icon-position-right color-green"></i></div>
+            </button>
+
+            <div class="site_name fl">
+              <p class="flame-name">Android OS 5.1</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!--検索表示ボタン-->
+      <div class="btn-wrap">
+        <button class="select-btn btn-inner middle rounded green" ng-click="anlc.onclick()">結果表示</button>
+      </div>
+
+    </li>
+  </ul>
+
+  <!--Loading-->
+  <div class="loading"></div>
+
+  <!--モーダル-->
+  <div id ="modal" class="modal-wrap shadow" style="display: none;">
+
+    <i id ="closeBtn" class="icon icon-close large color-gray colse-btn-position" ng-click="anlc.onCloseModal($event)"></i>
+
+    <div class="modal-inner">
+
+      <!--<i id ="closeBtn" class="icon icon-close large colse-btn-position" ng-click="anlc.onCloseModal($event)"></i>-->
+
+      <form class="search large" action="/" name="search" method="post">
+        <dl>
+          <dt>
+            <input type="text" name="search" value="" placeholder="Search" />
+          </dt>
+          <dd>
+            <button>
+              <i class="icon icon-search large color-gray btn-icon-position"></i>
+            </button>
+          </dd>
+        </dl>
+      </form>
+
+      <div class="list-contents">
+        <p class="fl">候補</p>
+        <ul>
+          <li>サイト枠名</li>
+          <li>サイト枠名</li>
+          <li>サイト枠名</li>
+        </ul>
+
+        <ul>
+          <li>d4h4gmcnbklkshol479-ncbkkjlmmlljhhkxukmfbgr89v</li>
+          <li>d4h4gmcnbklkshol479-ncbkkjlmmlljhhkxukmfbgr89v</li>
+          <li>d4h4gmcnbklkshol479-ncbkkjlmmlljhhkxukmfbgr89v</li>
+        </ul>
+
+        <!--<div class="arrow"></div>-->
+        <div class="icon-arrow-wrap arrow-position">
+          <i class="icon icon-chevron-thin-down arrow-size color-light-gray"></i>
+        </div>
+
+
+      </div>
+
+      <div class="list-contents">
+        <p class="fl">履歴</p>
+        <ul>
+          <li>サイト枠名</li>
+          <li>サイト枠名</li>
+          <li>サイト枠名</li>
+        </ul>
+
+        <ul>
+          <li>d4h4gmcnbklkshol479-ncbkkjlmmlljhhkxukmfbgr89v</li>
+          <li>d4h4gmcnbklkshol479-ncbkkjlmmlljhhkxukmfbgr89v</li>
+          <li>d4h4gmcnbklkshol479-ncbkkjlmmlljhhkxukmfbgr89v</li>
+        </ul>
+
+        <!--<div class="arrow"></div>-->
+        <div class="icon-arrow-wrap arrow-position">
+          <i class="icon icon-chevron-thin-down arrow-size color-light-gray"></i>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!--Loading-->
+  <div id="loader" class="loader-content">
+    <div class='loader-wrap'>
+      <div class='loader'>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--text'></div>
+      </div>
+    </div>
+  </div>
+
+
+</div>

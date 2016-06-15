@@ -1,0 +1,409 @@
+/*
+#overview
+table
+
+テーブルのサンプルです
+td, thにclass「.w3」~「.w15」追記で横幅はの%指定可。
+*/
+
+
+/*#styleguide
+
+
+デフォルトテーブル(SDS用)
+
+```
+<table class="table table-default">
+  <thead>
+    <tr>
+      <th class="bgGray tc">日付</th>
+      <th class="bgGray tc">再生開始 (1秒)</th>
+      <th class="bgGray tc">25%</th>
+      <th class="bgGray tc">50%</th>
+      <th class="bgGray tc">75%</th>
+      <th class="bgGray tc">100%</th>
+    </tr>
+  </thead>
+  <tbody class="table-tr-color">
+    <tr class="bgwhite">
+      <td>2016-03-11</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2016-03-12</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+```
+*/
+
+
+/*#styleguide
+
+
+tdを1行ごとに色変更
+
+<tbody>に「tbody-cell-color」追記。
+
+```
+<table class="table table-default">
+  <thead>
+    <tr>
+      <th class="bgGray tc">日付</th>
+      <th class="bgGray tc">再生開始 (1秒)</th>
+      <th class="bgGray tc">25%</th>
+      <th class="bgGray tc">50%</th>
+      <th class="bgGray tc">75%</th>
+      <th class="bgGray tc">100%</th>
+    </tr>
+  </thead>
+  <tbody class="tbody-cell-color">
+    <tr>
+      <td>2016-03-11</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2016-03-12</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+```
+*/
+
+
+/*#styleguide
+
+
+thグラデーション
+
+<th>にclass「gradation」追記。
+
+```
+<table class="table table-default">
+  <thead>
+    <tr>
+      <th class="gradation tc">日付</th>
+      <th class="gradation tc">再生開始 (1秒)</th>
+      <th class="gradation tc">25%</th>
+      <th class="gradation tc">50%</th>
+      <th class="gradation tc">75%</th>
+      <th class="gradation tc">100%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2016-03-11</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2016-03-12</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+```
+*/
+
+
+/*#styleguide
+
+
+Smallテーブル
+
+<table>にclass「.table-small」追記で小さくなる。
+
+```
+<table class="table table-small">
+  <thead>
+    <tr>
+      <th class="bgGray tc">日付</th>
+      <th class="bgGray tc">再生開始 (1秒)</th>
+      <th class="bgGray tc">25%</th>
+      <th class="bgGray tc">50%</th>
+      <th class="bgGray tc">75%</th>
+      <th class="bgGray tc">100%</th>
+    </tr>
+  </thead>
+  <tbody class="table-tr-color">
+    <tr class="bgwhite">
+      <td>2016-03-11</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2016-03-12</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+```
+*/
+
+
+/*#styleguide
+
+
+矢印なし(JP3用)
+
+```
+<table class="table table-small">
+  <thead>
+    <tr>
+      <th class="gradation txtLeft">日付</th>
+      <th class="gradation txtLeft">再生開始 (1秒)</th>
+      <th class="gradation txtLeft">25%</th>
+      <th class="gradation txtLeft">50%</th>
+      <th class="gradation txtLeft">75%</th>
+      <th class="gradation txtLeft">100%</th>
+    </tr>
+  </thead>
+  <tbody class="tbody-cell-color">
+    <tr>
+      <td>2016-03-11</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2016-03-12</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2016-03-13</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+```
+*/
+
+/*#styleguide
+
+
+矢印あり(JP3用)
+
+<th>のclassに「arrowTop」「arrowRight」「arrowBottom」「arrowLeft」追加で矢印向き変わる。
+
+```
+<table class="table table-small">
+  <thead>
+    <tr>
+      <th class="gradation txtLeft arrowTop">日付</th>
+      <th class="gradation txtLeft arrowBottom">再生開始 (1秒)</th>
+      <th class="gradation txtLeft">25%</th>
+      <th class="gradation txtLeft">50%</th>
+      <th class="gradation txtLeft">75%</th>
+      <th class="gradation txtLeft">100%</th>
+    </tr>
+  </thead>
+  <tbody class="tbody-cell-color">
+    <tr>
+      <td>2016-03-11</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2016-03-12</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2016-03-13</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+```
+*/
+
+
+
+/*
+* Table
+*/
+.table {
+  width: 100%;
+  max-width: 100%;
+  color: $tableFontColor;
+  border-spacing: 0;
+  border-collapse: collapse;
+
+  // 縦幅広め
+  &.table-default {
+
+    th {
+      font-size: 14px;
+      line-height: 2;
+      padding: 12px 10px;
+    }
+    td {
+      padding: 30px 10px;
+    }
+  }
+
+  // 縦幅狭め
+  &.table-small {
+
+    th, td {
+      font-size: 11px;
+      line-height: 1.5;
+      padding: 8px;
+    }
+    th {
+      font-weight: 600;
+    }
+  }
+
+  // 共通
+  tr {
+    page-break-inside: avoid;
+  }
+
+  th,
+  td {
+    //width: 11%;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+  }
+
+  th {
+
+    // テキストセンター
+    &.tc {
+      text-align: center;
+    }
+
+    // 左テキスト
+    &.txtLeft {
+      text-align: left;
+    }
+
+    // 背景グレー
+    &.bgGray {
+      background: $tableThColor;
+    }
+
+    // 背景グラデーション
+    &.gradation {
+      color: $tableFontGray;
+      @include grade($gradationGray);
+    }
+
+    // 上矢印
+    &.arrowTop {
+      position: relative;
+      @extend %cursor;
+
+      &:after {
+        @include tableArrow(0, 3px, 5px, #7a7a7a, 'top');
+
+      }
+    }
+
+    // 下矢印
+    &.arrowBottom {
+      position: relative;
+      @extend %cursor;
+
+      &:after {
+        @include tableArrow(0, 3px, 5px, #7a7a7a, 'bottom');
+      }
+    }
+
+    // 右矢印
+    &.arrowRight {
+      position: relative;
+      @extend %cursor;
+    }
+
+    // 左矢印
+    &.arrowLeft {
+      position: relative;
+      @extend %cursor;
+    }
+
+  }
+
+
+  thead {
+    display: table-header-group;
+  }
+
+  tbody {
+
+    //tbodyカラー統一
+    &.table-tr-color {
+      background: $white;
+    }
+
+    //1行ごとに背景カラー変更
+    &.tbody-cell-color {
+      tr {
+        background: $white;
+      }
+      tr:nth-of-type(even) {
+        background: $tableTrColor;
+      }
+    }
+  }
+
+  caption {
+    color: $chartFontColor;
+    font-size: 18px;
+  }
+
+}

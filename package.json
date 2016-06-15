@@ -1,0 +1,23 @@
+{
+  "name": "analytics-design",
+  "version": "1.0.0",
+  "description": "analytics-design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:GoldSpotMediaJapan/Chart-DEMO.git"
+  },
+  "author": "miho arai",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-filter": "^3.0.1",
+    "main-bower-files": "^2.11.1"
+  }
+}

@@ -1,0 +1,303 @@
+/** 
+** Mixin 
+**/
+
+// カラム計算 960px 12カラム グリッド・システム想定 
+// How to USE : @include col(12);
+$gutter-width: 10px;    // Column base margin
+$column-width: 60px;    // Column base width
+$column-base-width: $column-width + $gutter-width * 2;    // Column base width
+
+@mixin col($span) {
+  @if 12 == $span{
+    float: none;
+  } @else {
+    float: left;
+  }
+  margin-right: $gutter-width;
+  margin-left: $gutter-width;
+  min-width: ($column-base-width * $span) - ($gutter-width * 2) !important;;
+}
+
+
+// Font size フォントサイズ指定 基本 10px ベース
+// How to USE : @include col(14);
+$base-font-size : 10; // px (font-size : 62.5%) 
+
+@mixin fs($size: $base-font-size) {
+  font-size: $size + px;
+  font-size: ($size / 10)  + rem;
+}
+
+
+// インライン要素の天地中央
+// How to USE : @include line-and-height(12);
+@mixin line-and-height($height) {
+  height: $height + px;
+  line-height: $height - 2 + px;
+}
+
+/*
+* Gradation
+* 第1引数: color
+*/
+@mixin grade($color: #ccc, $value: 30){
+  @include background-image(linear-gradient(top, lighten($color,$value), $color));
+  @include filter-gradient(lighten($color,$value), $color, vertical); //IE用の記述
+}
+
+/*
+* Color Gradation
+* 第1引数: color
+* 第2引数: color
+* 第3引数: グラデーション向き
+*/
+@mixin colorGrade($color1: $white-l1, $color2: $gray-l7, $aspect: horizontal){
+
+  // default値
+  $grade-direction    : left !default;
+  $grade-direction-ie : horizontal !default;
+
+  @if ($aspect == 'horizontal'){
+    $grade-direction    : left;
+    $grade-direction-ie : horizontal;
+  } @else if ($aspect == 'vertical') {
+    $grade-direction    : top;
+    $grade-direction-ie : vertical;
+  } @else {
+    $grade-direction    : left;
+    $grade-direction-ie : horizontal;
+  }
+  
+  @include background-image( linear-gradient( $grade-direction, $color1, $color2 ));
+  @include filter-gradient( lighten( $color1, 30 ), $color2, $grade-direction-ie); //IE用の記述
+
+}
+
+
+/*
+* Arrow
+*
+* 第1引数: size
+* 第2引数: border 太さ
+* 第3引数: border 色
+* 第4引数: 矢印向き top, right, bottom, left
+*
+*/
+@mixin arrow( $size:16px, $border:2px, $color:#b3b3b3, $direction:'top') {
+
+  width : $size;
+  height: $size;
+
+  @if $direction == 'top' {
+    border-left: $border solid $color;
+    border-bottom: $border solid $color;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+
+  @else if $direction == 'right'{
+    border-left: $border solid $color;
+    border-bottom: $border solid $color;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  
+  @else if $direction == 'bottom'{
+    border-left: $border solid $color;
+    border-bottom: $border solid $color;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  @else if $direction == 'left'{
+    border-left: $border solid $color;
+    border-bottom: $border solid $color;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  box-sizing: border-box;
+
+}
+
+/*
+* Table Arrow
+*
+* 第1引数: size 0
+* 第2引数: size 3px
+* 第3引数: size 5px
+* 第4引数: color
+* 第5引数: 矢印向き top, right, bottom, left
+*
+*/
+@mixin tableArrow($size0: 0, $size3:3px, $size5:5px, $color:#7a7a7a, $direction:'top') {
+
+  @if $direction == 'top' {
+    width: $size0;
+    height: $size0;
+    content: " ";
+    display: inline-block;
+    border-style: solid;
+    border-width: $size0 $size3 $size5 $size3;
+    border-color: transparent transparent $color;
+    position: absolute;
+    top: 13px;
+    right: 8px;
+  } @else if $direction == 'right' {
+    width: $size0;
+    height: $size0;
+    content:" ";
+    display:inline-block;
+    border-style: solid;
+    border-width: $size3 $size0 $size3 $size5;
+    border-color: transparent transparent transparent $color;
+    position: absolute;
+    top: 13px;
+    right: 8px;
+  } @else if $direction == 'bottom' {
+    width: $size0;
+    height: $size0;
+    content:" ";
+    display:inline-block;
+    border-style: solid;
+    border-width: $size5 $size3 $size0 $size3;
+    border-color: $color transparent transparent;
+    position: absolute;
+    top: 13px;
+    right: 8px;
+  } @else if $direction == 'left' {
+    width: $size0;
+    height: $size0;
+    content:" ";
+    display:inline-block;
+    border-style: solid;
+    border-width: $size3 $size5 $size3 $size0;
+    border-color: transparent $color transparent transparent;
+    position: absolute;
+    top: 13px;
+    right: 8px;
+  }
+}
+
+// 角丸生成 
+// How to USE : @include shape(12);
+@mixin shape($shape: oval, $shape-radius: false) {
+  @if $shape == oval {
+    @include border-radius(1000px);
+  }
+  @else if $shape == circle {
+    @include border-radius(1000px);
+  }
+  @else if $shape == pill-left {
+    @include border-radius(500px 0 0 500px);
+  }
+  @else if $shape == pill-right {
+    @include border-radius(0 500px 500px 0);
+  }
+  @else if $shape-radius != false {
+    @include border-radius($shape-radius);
+  }
+  @else {
+    @include border-radius(0);
+  }
+}
+
+
+// ツールチップ
+// How to USE : @include tooltip($tt-min-width, $tt-bgcolor, $tt-position, $tt-align);
+@mixin tooltip($tt-min-width, $tt-bgcolor, $tt-position, $tt-align) {
+  position: relative;
+
+  &:after {
+    display: block;
+    background: $tt-bgcolor;
+    border: 1px solid $tt-bgcolor;
+    border-bottom: 0;
+    @include border-radius(3px);
+    padding: 5px 10px;
+    width: auto;
+    min-width: $tt-min-width;
+    max-width: 500px;
+    position: absolute;
+    @if $tt-position == "bottom" {
+      @if $tt-align == "right" { right: 0 } @else { left: 0; }
+      top: 101%;
+      margin-top: 8px;
+    } @else if $tt-position == "top" {
+      @if $tt-align == "right" { right: 0 } @else { left: 0; }
+      bottom: 101%;
+      margin-bottom: 8px;
+    } @else if $tt-position == "left" {
+      right: 101%;
+      top: -35%;
+      margin-right: 8px;
+    } @else if $tt-position == "right" {
+      left: 101%;
+      top: -35%;
+      margin-left: 8px;
+    }
+
+    @if $tt-align == "right" {
+      text-align: right;
+    } @else if $tt-align == "left" {
+      text-align: left;
+    }
+
+    color: #fff;
+    content: attr(data-tooltip);
+    line-height: 1.5;
+    font-weight: normal;
+    font-style: normal;
+
+    @include transition(opacity 0.1s ease);
+    @include opacity(0);
+    pointer-events: none;
+
+    @if $tt-pretty != "no" {
+      @include background-image(linear-gradient($tt-position, lighten($tt-bgcolor, 12.5%), $tt-bgcolor));
+      @include box-shadow(0 0 5px 0 rgba($tt-bgcolor,.25));
+    }
+  }
+
+  &:before {
+    content: " ";
+    width: 0;
+    height: 0;
+    position: absolute;
+    @if $tt-position == "bottom" {
+      top: 101%;
+      @if $tt-align == "right" { right: 8px } @else { left: 8px; }
+      border-bottom: 9px solid $tt-bgcolor !important;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+    } @else if $tt-position == "top" {
+      bottom: 101%;
+      @if $tt-align == "right" { right: 8px } @else { left: 8px; }
+      border-top: 9px solid $tt-bgcolor !important;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+    } @else if $tt-position == "left" {
+      top: 3px;
+      right: 101%;
+      border-left: 9px solid $tt-bgcolor !important;
+      border-top: 9px solid transparent;
+      border-bottom: 9px solid transparent;
+    } @else if $tt-position == "right" {
+      top: 3px;
+      left: 101%;
+      border-right: 9px solid $tt-bgcolor !important;
+      border-top: 9px solid transparent;
+      border-bottom: 9px solid transparent;
+    }
+    @include transition(opacity 0.1s ease);
+    @include opacity(0);
+    pointer-events: none;
+  }
+
+  &:hover:after,
+  &:hover:before {
+    @include transition(opacity 0.1s ease);
+    @include opacity(1);
+  }
+}

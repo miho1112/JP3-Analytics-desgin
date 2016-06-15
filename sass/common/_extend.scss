@@ -1,0 +1,18 @@
+/** 
+** Extend 
+**/
+
+// テキスト飛ばし
+// use : @extend %hide-text;
+%hide-text{
+  overflow: hidden;
+  text-indent: -9999px;
+  white-space: nowrap;
+}
+
+// Cursor is pointer
+// use : @extend %cursor;
+%cursor {
+  cursor: pointer;
+  cursor: hand;
+}

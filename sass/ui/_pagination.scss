@@ -1,0 +1,62 @@
+// Pagination
+//
+// based on Twitter Bootstrap for Laravel 4
+//
+// Markup:
+
+$pagination-border-radius: 4px;
+$pagination-color: #f2f2f2;
+
+.pagination ul {
+
+  @include clearfix;
+  float: right;
+  @include border-radius($pagination-border-radius);
+  
+  li {
+    display: inline;
+    a, span {
+      box-sizing: border-box;
+      
+      min-width: 31px;
+      height: 27px;
+      line-height: 27px;
+      text-align: center;
+      border: 1px solid $gray-l7;
+      border-left-width: 0;
+      float           : left;
+      text-decoration : none;
+      background-color: $white-l1;
+      cursor: default;
+    }
+    a:hover{
+      background-color: $gray-l2;
+    }
+    a.icon {
+      content: '';
+      min-width: 35px;
+    }
+    &:first-child {
+      a, span {
+        border-left-width: 1px;
+        @include border-left-radius($pagination-border-radius);
+      }
+    }
+    &:last-child {
+      a, span {
+        @include border-right-radius($pagination-border-radius);
+      }
+    }
+  }
+  .active {
+    a, span {
+      background-color: $buttons-related-color-active;
+      color: $white-l1;
+      cursor: default;
+    }
+    a:hover {
+      background: $buttons-related-color-active;;
+    }
+  }
+}
+

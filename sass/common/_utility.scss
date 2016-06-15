@@ -1,0 +1,90 @@
+/** 
+** Commons Style
+** 共通で利用する小さな単位のCSS
+**/
+
+// micro clear fix
+.cf:before, .cf:after { content: " "; display: table;  }
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+// clear 単独
+.cb { clear: both; }
+
+// Display set
+.none         { display: none; }
+.block        { display: block }
+.inline       { display: inline }
+.inline-block { display: inline-block }
+
+// floating set
+.fl{ float: left; }
+.fr{ float: right; }
+
+// text align set
+.txt-ac { text-align: center; }
+.txt-al { text-align: left; }
+.txt-ar { text-align: right; }
+
+// font size set
+.txt-xs { @include fs(8) }
+.txt-s  { @include fs(10) }
+.txt-m  { @include fs(12) }
+.txt-l  { @include fs(16) }
+.txt-xl { @include fs(18) }
+
+// width set
+// w0 〜 w100%
+@for $i from 0 through 100 {
+  .w#{$i * 1} {
+    width: $i * 1% !important;
+  }
+}
+
+// margin set
+// mt0 〜 mt50
+@for $i from 0 through 10 {
+  .mt#{$i * 5} {
+    margin-top   : $i * 5px;
+  }
+  .mr#{$i * 5} {
+    margin-right : $i * 5px;
+  }
+  .mb#{$i * 5} {
+    margin-bottom: $i * 5px;
+  }
+  .ml#{$i * 5} {
+    margin-left  : $i * 5px;
+  }
+}
+
+// padding set
+// pt0 〜 pt50
+@for $i from 0 through 10 {
+  .pt#{$i * 5} {
+    padding-top    : $i * 5px;
+  }
+  .pr#{$i * 5} {
+    padding-right  : $i * 5px;
+  }
+  .pb#{$i * 5} {
+    padding-bottom : $i * 5px;
+  }
+  .pl#{$i * 5} {
+    padding-left   : $i * 5px;
+  }
+}
+
+// white-space　Text 折り返し
+.nowrap { white-space: nowrap; }
+
+// テキスト飛ばし
+.txt-hide { @extend %hide-text; }
+
+// 固定テキスト表示
+.camp-note:before  { content: "Note:"; }
+.camp-id:before    { content: "ID:"; }
+.price-icon:before { content: '¥'; }
+
+// カーソル手
+.cursor { @extend %cursor; }

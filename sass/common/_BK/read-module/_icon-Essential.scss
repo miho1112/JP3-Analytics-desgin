@@ -1,0 +1,2261 @@
+/*
+#overview
+icon - Essential
+
+アイコンのサンプルです
+※ .ml40は入れなくて大丈夫です。
+*/
+
+
+
+/*#styleguide
+
+list
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-add-to-list size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-list size color-gray"></i>
+</div>
+
+```
+*/
+.icon-add-to-list:before {
+  content: "\e930";
+}
+.icon-list:before {
+  content: "\ea01";
+}
+
+
+
+/*#styleguide
+
+controller
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-controller-fast-backward size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-controller-fast-forward size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-controller-jump-to-start size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-controller-next size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-controller-paus size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-controller-play size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-controller-record size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-controller-stop size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-controller-volume size color-gray"></i>
+</div>
+
+```
+*/
+.icon-controller-fast-backward:before {
+  content: "\e933";
+}
+.icon-controller-fast-forward:before {
+  content: "\e963";
+}
+.icon-controller-jump-to-start:before {
+  content: "\e964";
+}
+.icon-controller-next:before {
+  content: "\e965";
+}
+.icon-controller-paus:before {
+  content: "\e966";
+}
+.icon-controller-play:before {
+  content: "\e967";
+}
+.icon-controller-record:before {
+  content: "\e968";
+}
+.icon-controller-stop:before {
+  content: "\e969";
+}
+.icon-controller-volume:before {
+  content: "\e96a";
+}
+
+
+
+/*#styleguide
+
+cycle
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-cw size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-cycle size color-gray"></i>
+</div>
+
+```
+*/
+.icon-cw:before {
+  content: "\e9c0";
+}
+.icon-cycle:before {
+  content: "\e9c1";
+}
+
+
+
+
+/*#styleguide
+
+icon-triangle
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-triangle-down size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-triangle-left size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-triangle-right size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-triangle-up size color-gray"></i>
+</div>
+
+```
+*/
+.icon-triangle-down:before {
+  content: "\e981";
+}
+.icon-triangle-left:before {
+  content: "\e982";
+}
+.icon-triangle-right:before {
+  content: "\e983";
+}
+.icon-triangle-up:before {
+  content: "\e984";
+}
+
+
+
+/*#styleguide
+
+select-arrows
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-select-arrows size color-gray"></i>
+</div>
+
+```
+*/
+.icon-select-arrows:before {
+  content: "\e97d";
+}
+
+
+
+/*#styleguide
+
+arrow
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-arrow-down2 size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-arrow-left2 size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-arrow-right2 size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-arrow-up2 size color-gray"></i>
+</div>
+
+```
+*/
+.icon-arrow-down2:before {
+  content: "\e944";
+}
+.icon-arrow-left2:before {
+  content: "\e945";
+}
+.icon-arrow-right2:before {
+  content: "\e94a";
+}
+.icon-arrow-up2:before {
+  content: "\e94b";
+}
+
+
+
+/*#styleguide
+
+arrow-bold
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-arrow-bold-down size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-arrow-bold-left size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-arrow-bold-right size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-arrow-bold-up size color-gray"></i>
+</div>
+
+```
+*/
+.icon-arrow-bold-down:before {
+  content: "\e940";
+}
+
+.icon-arrow-bold-left:before {
+  content: "\e941";
+}
+
+.icon-arrow-bold-right:before {
+  content: "\e942";
+}
+
+.icon-arrow-bold-up:before {
+  content: "\e943";
+}
+
+
+
+/*#styleguide
+
+arrow-long
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-arrow-long-down size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-arrow-long-left size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-arrow-long-right size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-arrow-long-up size color-gray"></i>
+</div>
+
+```
+*/
+.icon-arrow-long-down:before {
+  content: "\e946";
+}
+.icon-arrow-long-left:before {
+  content: "\e947";
+}
+.icon-arrow-long-right:before {
+  content: "\e948";
+}
+.icon-arrow-long-up:before {
+  content: "\e949";
+}
+
+
+
+/*#styleguide
+
+arrow-with-circle
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-arrow-with-circle-down size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-arrow-with-circle-left size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-arrow-with-circle-right size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-arrow-with-circle-up size color-gray"></i>
+</div>
+
+```
+*/
+.icon-arrow-with-circle-down:before {
+  content: "\e94c";
+}
+.icon-arrow-with-circle-left:before {
+  content: "\e94d";
+}
+.icon-arrow-with-circle-right:before {
+  content: "\e94e";
+}
+.icon-arrow-with-circle-up:before {
+  content: "\e94f";
+}
+
+
+
+/*#styleguide
+
+resize
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-resize-100 size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-resize-full-screen size color-gray"></i>
+</div>
+
+```
+*/
+.icon-resize-100:before {
+  content: "\e97a";
+}
+.icon-resize-full-screen:before {
+  content: "\e97b";
+}
+
+
+
+/*#styleguide
+
+chevron
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-chevron-down size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-chevron-left size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-chevron-right size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-chevron-up size color-gray"></i>
+</div>
+
+```
+*/
+.icon-chevron-down:before {
+  content: "\e952";
+}
+.icon-chevron-left:before {
+  content: "\e953";
+}
+.icon-chevron-right:before {
+  content: "\e954";
+}
+.icon-chevron-up:before {
+  content: "\e95d";
+}
+
+
+
+/*#styleguide
+
+chevron-small
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-chevron-small-down size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-chevron-small-left size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-chevron-small-right size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-chevron-small-up size color-gray"></i>
+</div>
+
+```
+*/
+.icon-chevron-small-down:before {
+  content: "\e955";
+}
+.icon-chevron-small-left:before {
+  content: "\e956";
+}
+.icon-chevron-small-right:before {
+  content: "\e957";
+}
+.icon-chevron-small-up:before {
+  content: "\e958";
+}
+
+
+
+/*#styleguide
+
+chevron-thin
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-chevron-thin-down size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-chevron-thin-left size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-chevron-thin-right size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-chevron-thin-up size color-gray"></i>
+</div>
+
+```
+*/
+.icon-chevron-thin-down:before {
+  content: "\e959";
+}
+.icon-chevron-thin-left:before {
+  content: "\e95a";
+}
+.icon-chevron-thin-right:before {
+  content: "\e95b";
+}
+.icon-chevron-thin-up:before {
+  content: "\e95c";
+}
+
+
+
+
+/*#styleguide
+
+chevron-with-circle
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-chevron-with-circle-down size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-chevron-with-circle-left size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-chevron-with-circle-right size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-chevron-with-circle-up size color-gray"></i>
+</div>
+
+```
+*/
+.icon-chevron-with-circle-down:before {
+  content: "\e95e";
+}
+.icon-chevron-with-circle-left:before {
+  content: "\e95f";
+}
+.icon-chevron-with-circle-right:before {
+  content: "\e960";
+}
+.icon-chevron-with-circle-up:before {
+  content: "\e961";
+}
+
+
+
+/*#styleguide
+
+document
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-document-landscape size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-document size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-documents size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-text-document-inverted size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-text-document size color-gray"></i>
+</div>
+
+```
+*/
+.icon-document-landscape:before {
+  content: "\e93d";
+}
+.icon-document:before {
+  content: "\e9c5";
+}
+.icon-documents:before {
+  content: "\e9c6";
+}
+.icon-text-document-inverted:before {
+  content: "\ea56";
+}
+.icon-text-document:before {
+  content: "\ea57";
+}
+
+
+
+/*#styleguide
+
+browser
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-browser size color-gray"></i>
+</div>
+
+```
+*/
+.icon-browser:before {
+  content: "\e9a5";
+}
+
+
+
+/*#styleguide
+
+layers
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-layers size color-gray"></i>
+</div>
+
+```
+*/
+.icon-layers:before {
+  content: "\e978";
+}
+
+
+
+/*#styleguide
+
+eye
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-eye2 size color-gray"></i>
+</div>
+
+```
+*/
+.icon-eye2:before {
+  content: "\e9d2";
+}
+
+
+
+/*#styleguide
+
+edit
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-edit2 size color-gray"></i>
+</div>
+
+```
+*/
+.icon-edit2:before {
+  content: "\e9ca";
+}
+
+
+
+/*#styleguide
+
+user
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-remove-user size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-add-user size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-user2 size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-users size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-man size color-gray"></i>
+</div>
+
+```
+*/
+.icon-remove-user:before {
+  content: "\e93e";
+}
+
+.icon-add-user:before {
+  content: "\e988";
+}
+
+.icon-user2:before {
+  content: "\ea67";
+}
+
+.icon-users:before {
+  content: "\ea68";
+}
+.icon-man:before {
+  content: "\ea0c";
+}
+
+
+
+/*#styleguide
+
+cloud
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-cloud size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-upload-to-cloud size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-thunder-cloud size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-icloud size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-soundcloud size color-gray"></i>
+</div>
+
+```
+*/
+.icon-cloud:before {
+  content: "\e962";
+}
+.icon-upload-to-cloud:before {
+  content: "\e986";
+}
+.icon-thunder-cloud:before {
+  content: "\ea5c";
+}
+.icon-icloud:before {
+  content: "\ea7b";
+}
+.icon-soundcloud:before {
+  content: "\ea89";
+}
+
+
+
+/*#styleguide
+
+sound on / off
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-sound-mute size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-sound size color-gray"></i>
+</div>
+
+```
+*/
+.icon-sound-mute:before {
+  content: "\e97e";
+}
+.icon-sound:before {
+  content: "\e97f";
+}
+
+
+
+/*#styleguide
+
+download / upload / inbox
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-download size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-upload size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-inbox size color-gray"></i>
+</div>
+
+```
+*/
+.icon-download:before {
+  content: "\e970";
+}
+.icon-upload:before {
+  content: "\e987";
+}
+.icon-inbox:before {
+  content: "\e9ee";
+}
+
+
+
+/*#styleguide
+
+exclamation
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-warning size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-new size color-gray"></i>
+</div>
+
+```
+*/
+.icon-warning:before {
+  content: "\e93f";
+}
+.icon-new:before {
+  content: "\ea1c";
+}
+
+
+
+/*#styleguide
+
+lock
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-lock-open size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-lock2 size color-gray"></i>
+</div>
+
+```
+*/
+.icon-lock-open:before {
+  content: "\ea04";
+}
+.icon-lock2:before {
+  content: "\ea05";
+}
+
+
+
+/*#styleguide
+
+light
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-light-bulb size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-light-down size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-light-up size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-flashlight size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-flash size color-gray"></i>
+</div>
+
+```
+*/
+.icon-light-bulb:before {
+  content: "\e9fc";
+}
+.icon-light-down:before {
+  content: "\e9fd";
+}
+.icon-light-up:before {
+  content: "\e9fe";
+}
+.icon-flashlight:before {
+  content: "\e9d6";
+}
+.icon-flash:before {
+  content: "\e9d5";
+}
+
+
+
+/*#styleguide
+
+folder
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-folder-images size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-folder-music size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-folder-video size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-folder size color-gray"></i>
+</div>
+
+```
+*/
+.icon-folder-images:before {
+  content: "\e9d8";
+}
+.icon-folder-music:before {
+  content: "\e9d9";
+}
+.icon-folder-video:before {
+  content: "\e9da";
+}
+.icon-folder:before {
+  content: "\e9db";
+}
+
+
+
+/*#styleguide
+
+bookmark
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-bookmark2 size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-bookmarks2 size color-gray"></i>
+</div>
+
+```
+*/
+.icon-bookmark2:before {
+  content: "\e950";
+}
+.icon-bookmarks2:before {
+  content: "\e951";
+}
+
+
+
+/*#styleguide
+
+tag
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-tag2 size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-untag size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-price-tag size color-gray"></i>
+</div>
+
+```
+*/
+.icon-tag2:before {
+  content: "\ea55";
+}
+.icon-untag:before {
+  content: "\ea66";
+}
+.icon-price-tag:before {
+  content: "\ea2c";
+}
+
+
+
+/*#styleguide
+
+thumbs
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-thumbs-down size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-thumbs-up size color-gray"></i>
+</div>
+
+```
+*/
+.icon-thumbs-down:before {
+  content: "\ea5a";
+}
+.icon-thumbs-up:before {
+  content: "\ea5b";
+}
+
+
+
+/*#styleguide
+
+device
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-tablet2 size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-old-mobile size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-mobile2 size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-old-phone size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-phone size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-classic-computer size color-gray"></i>
+</div>
+
+```
+*/
+.icon-tablet2:before {
+  content: "\ea54";
+}
+.icon-old-mobile:before {
+  content: "\ea20";
+}
+.icon-mobile2:before {
+  content: "\ea15";
+}
+.icon-old-phone:before {
+  content: "\ea21";
+}
+.icon-phone:before {
+  content: "\ea25";
+}
+.icon-classic-computer:before {
+  content: "\e932";
+}
+
+
+
+/*#styleguide
+
+save / trash
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-save size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-trash size color-gray"></i>
+</div>
+
+```
+*/
+.icon-save:before {
+  content: "\e97c";
+}
+.icon-trash:before {
+  content: "\e980";
+}
+
+
+
+/*#styleguide
+
+login / log-out
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-log-out size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-login size color-gray"></i>
+</div>
+
+```
+*/
+.icon-log-out:before {
+  content: "\ea06";
+}
+.icon-login:before {
+  content: "\ea07";
+}
+
+
+
+/*#styleguide
+
+install / uninstall
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-install size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-uninstall size color-gray"></i>
+</div>
+
+```
+*/
+.icon-install:before {
+  content: "\e977";
+}
+.icon-uninstall:before {
+  content: "\e985";
+}
+
+
+
+/*#styleguide
+
+images
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-image-inverted size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-image size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-images size color-gray"></i>
+</div>
+
+```
+*/
+.icon-image-inverted:before {
+  content: "\e9eb";
+}
+.icon-image:before {
+  content: "\e9ec";
+}
+.icon-images:before {
+  content: "\e9ed";
+}
+
+
+
+/*#styleguide
+
+book
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-open-book size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-book2 size color-gray"></i>
+</div>
+
+```
+*/
+.icon-open-book:before {
+  content: "\e979";
+}
+.icon-book2:before {
+  content: "\e9a1";
+}
+
+
+
+/*#styleguide
+
+chat
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-chat size color-gray"></i>
+</div>
+
+```
+*/
+.icon-chat:before {
+  content: "\e9ad";
+}
+
+
+
+/*#styleguide
+
+calendar
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-calendar2 size color-gray"></i>
+</div>
+
+```
+*/
+.icon-calendar2:before {
+  content: "\e9aa";
+}
+
+
+
+/*#styleguide
+
+calculator
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-calculator size color-gray"></i>
+</div>
+
+```
+*/
+.icon-calculator:before {
+  content: "\e9a9";
+}
+
+
+
+/*#styleguide
+
+camera
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-camera size color-gray"></i>
+</div>
+
+```
+*/
+.icon-camera:before {
+  content: "\e9ab";
+}
+
+
+
+/*#styleguide
+
+cog
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-cog2 size color-gray"></i>
+</div>
+
+```
+*/
+.icon-cog2:before {
+  content: "\e9b8";
+}
+
+
+
+/*#styleguide
+
+clock
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-clock2 size color-gray"></i>
+</div>
+
+```
+*/
+.icon-clock2:before {
+  content: "\e9b6";
+}
+
+
+
+/*#styleguide
+
+circle
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-circular-graph size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-circle-with-cross size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-circle-with-minus size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-circle-with-plus size color-gray"></i>
+</div>
+
+```
+*/
+.icon-circle:before {
+  content: "\e9b2";
+}
+.icon-circular-graph:before {
+  content: "\e9b3";
+}
+.icon-circle-with-cross:before {
+  content: "\e9af";
+}
+.icon-circle-with-minus:before {
+  content: "\e9b0";
+}
+.icon-circle-with-plus:before {
+  content: "\e9b1";
+}
+
+
+
+/*#styleguide
+
+credit
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-credit-card size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-credit size color-gray"></i>
+</div>
+
+```
+*/
+.icon-credit-card:before {
+  content: "\e9bc";
+}
+.icon-credit:before {
+  content: "\e9bd";
+}
+
+
+
+/*#styleguide
+
+align
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-align-bottom size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-align-horizontal-middle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-align-left size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-align-right size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-align-top size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-align-vertical-middle size color-gray"></i>
+</div>
+
+
+```
+*/
+.icon-align-bottom:before {
+  content: "\e98f";
+}
+.icon-align-horizontal-middle:before {
+  content: "\e990";
+}
+.icon-align-left:before {
+  content: "\e991";
+}
+.icon-align-right:before {
+  content: "\e992";
+}
+.icon-align-top:before {
+  content: "\e993";
+}
+.icon-align-vertical-middle:before {
+  content: "\e994";
+}
+
+
+
+
+/*#styleguide
+
+dots
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-dot-single size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-dots-three-horizontal size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-dots-three-vertical size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-dots-two-horizontal size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-dots-two-vertical size color-gray"></i>
+</div>
+
+```
+*/
+.icon-dot-single:before {
+  content: "\e96b";
+}
+.icon-dots-three-horizontal:before {
+  content: "\e96c";
+}
+.icon-dots-three-vertical:before {
+  content: "\e96d";
+}
+.icon-dots-two-horizontal:before {
+  content: "\e96e";
+}
+.icon-dots-two-vertical:before {
+  content: "\e96f";
+}
+
+
+
+/*#styleguide
+
+SNS-logo_01
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-facebook-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-facebook size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-twitter-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-twitter size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-instagram-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-instagram size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-google-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-google size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-mixi size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-linkedin-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-linkedin size color-gray"></i>
+</div>
+
+```
+*/
+.icon-facebook-with-circle:before {
+  content: "\ea97";
+}
+.icon-facebook:before {
+  content: "\ea98";
+}
+.icon-twitter-with-circle:before {
+  content: "\eaac";
+}
+.icon-twitter:before {
+  content: "\eaad";
+}
+.icon-instagram-with-circle:before {
+  content: "\ea9f";
+}
+.icon-instagram:before {
+  content: "\eaa0";
+}
+.icon-google-with-circle:before {
+  content: "\ea9d";
+}
+.icon-google:before {
+  content: "\ea9e";
+}
+.icon-mixi:before {
+  content: "\ea7c";
+}
+.icon-linkedin-with-circle:before {
+  content: "\eaa3";
+}
+.icon-linkedin:before {
+  content: "\eaa4";
+}
+
+
+
+/*#styleguide
+
+SNS-logo_02
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-tumblr-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-tumblr size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-pinterest-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-pinterest size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-stumbleupon-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-stumbleupon size color-gray"></i>
+</div>
+
+```
+*/
+.icon-tumblr-with-circle:before {
+  content: "\eaaa";
+}
+.icon-tumblr:before {
+  content: "\eaab";
+}
+.icon-pinterest-with-circle:before {
+  content: "\eaa5";
+}
+.icon-pinterest:before {
+  content: "\eaa6";
+}
+.icon-stumbleupon-with-circle:before {
+  content: "\eaa8";
+}
+.icon-stumbleupon:before {
+  content: "\eaa9";
+}
+
+
+
+/*#styleguide
+
+YouTube-logo
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-youtube-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-youtube size color-gray"></i>
+</div>
+
+```
+*/
+.icon-youtube-with-circle:before {
+  content: "\eab0";
+}
+.icon-youtube:before {
+  content: "\eab1";
+}
+
+
+
+/*#styleguide
+
+skype-logo
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-skype-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-skype size color-gray"></i>
+</div>
+
+```
+*/
+.icon-skype-with-circle:before {
+  content: "\ea85";
+}
+.icon-skype:before {
+  content: "\ea86";
+}
+
+
+
+/*#styleguide
+
+spotify-logo
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-spotify-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-spotify size color-gray"></i>
+</div>
+
+```
+*/
+.icon-spotify-with-circle:before {
+  content: "\ea8a";
+}
+.icon-spotify:before {
+  content: "\ea8b";
+}
+
+
+
+/*#styleguide
+
+vine-logo
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-vine-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-vine size color-gray"></i>
+</div>
+
+```
+*/
+.icon-vine-with-circle:before {
+  content: "\ea8d";
+}
+.icon-vine:before {
+  content: "\ea8e";
+}
+
+
+
+/*#styleguide
+
+vk-logo
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-vk-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-vk size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-vk-alternitive size color-gray"></i>
+</div>
+
+```
+*/
+.icon-vk-with-circle:before {
+  content: "\ea90";
+}
+.icon-vk:before {
+  content: "\ea91";
+}
+.icon-vk-alternitive:before {
+  content: "\ea8f";
+}
+
+
+
+/*#styleguide
+
+xing-logo
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-xing-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-xing size color-gray"></i>
+</div>
+
+```
+*/
+.icon-xing-with-circle:before {
+  content: "\ea92";
+}
+.icon-xing:before {
+  content: "\ea93";
+}
+
+
+
+/*#styleguide
+
+dribbble-logo
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-dribbble-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-dribbble size color-gray"></i>
+</div>
+
+```
+*/
+.icon-dribbble-with-circle:before {
+  content: "\ea95";
+}
+.icon-dribbble:before {
+  content: "\ea96";
+}
+
+
+
+/*#styleguide
+
+flickr-logo
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-flickr-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-flickr size color-gray"></i>
+</div>
+
+```
+*/
+.icon-flickr-with-circle:before {
+  content: "\ea99";
+}
+.icon-flickr:before {
+  content: "\ea9a";
+}
+
+
+
+/*#styleguide
+
+github-logo
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-github-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-github size color-gray"></i>
+</div>
+
+```
+*/
+.icon-github-with-circle:before {
+  content: "\ea9b";
+}
+.icon-github:before {
+  content: "\ea9c";
+}
+
+
+
+/*#styleguide
+
+lastfm-logo
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-lastfm-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-lastfm size color-gray"></i>
+</div>
+
+```
+*/
+.icon-lastfm-with-circle:before {
+  content: "\eaa1";
+}
+.icon-lastfm:before {
+  content: "\eaa2";
+}
+
+
+
+/*#styleguide
+
+vimeo-logo
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-vimeo-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-vimeo size color-gray"></i>
+</div>
+
+```
+*/
+.icon-vimeo-with-circle:before {
+  content: "\eaae";
+}
+.icon-vimeo:before {
+  content: "\eaaf";
+}
+
+
+
+/*#styleguide
+
+rdio-logo
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-rdio-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-rdio size color-gray"></i>
+</div>
+
+```
+*/
+.icon-rdio-with-circle:before {
+  content: "\ea81";
+}
+.icon-rdio:before {
+  content: "\eaa7";
+}
+
+
+
+/*#styleguide
+
+500px-logo
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-500px-with-circle size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-500px size color-gray"></i>
+</div>
+
+```
+*/
+.icon-500px-with-circle:before {
+  content: "\ea6f";
+}
+.icon-500px:before {
+  content: "\ea70";
+}
+
+
+
+/*#styleguide
+
+other-logo_01
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-creative-cloud size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-basecamp size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-behance size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-dropbox size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-evernote size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-flattr size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-google-drive size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-google-hangouts size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-grooveshark size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-onedrive size color-gray"></i>
+</div>
+
+```
+*/
+.icon-creative-cloud:before {
+  content: "\ea73";
+}
+.icon-basecamp:before {
+  content: "\ea71";
+}
+.icon-behance:before {
+  content: "\ea72";
+}
+.icon-dropbox:before {
+  content: "\ea74";
+}
+.icon-evernote:before {
+  content: "\ea75";
+}
+.icon-flattr:before {
+  content: "\ea76";
+}
+.icon-foursquare:before {
+  content: "\ea77";
+}
+.icon-google-drive:before {
+  content: "\ea78";
+}
+.icon-google-hangouts:before {
+  content: "\ea79";
+}
+.icon-grooveshark:before {
+  content: "\ea7a";
+}
+.icon-onedrive:before {
+  content: "\ea7d";
+}
+
+
+
+/*#styleguide
+
+other-logo_02
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-paypal size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-picasa size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-qq size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-renren size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-scribd size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-sina-weibo size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-renren size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-smashing size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-swarm size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-yelp size color-gray"></i>
+</div>
+
+```
+*/
+.icon-paypal:before {
+  content: "\ea7e";
+}
+.icon-picasa:before {
+  content: "\ea7f";
+}
+.icon-qq:before {
+  content: "\ea80";
+}
+.icon-renren:before {
+  content: "\ea82";
+}
+.icon-scribd:before {
+  content: "\ea83";
+}
+.icon-sina-weibo:before {
+  content: "\ea84";
+}
+.icon-slideshare:before {
+  content: "\ea87";
+}
+.icon-smashing:before {
+  content: "\ea88";
+}
+.icon-swarm:before {
+  content: "\ea8c";
+}
+.icon-yelp:before {
+  content: "\ea94";
+}
+
+
+
+/*#styleguide
+
+creative-commons
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-creative-commons-attribution size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-creative-commons-noderivs size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-creative-commons-noncommercial-eu size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-creative-commons-noncommercial-us size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-creative-commons-public-domain size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-creative-commons-remix size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-creative-commons-share size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-creative-commons-sharealike size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-creative-commons size color-gray"></i>
+</div>
+
+```
+*/
+.icon-creative-commons-attribution:before {
+  content: "\e934";
+}
+
+.icon-creative-commons-noderivs:before {
+  content: "\e935";
+}
+
+.icon-creative-commons-noncommercial-eu:before {
+  content: "\e936";
+}
+
+.icon-creative-commons-noncommercial-us:before {
+  content: "\e937";
+}
+
+.icon-creative-commons-public-domain:before {
+  content: "\e938";
+}
+
+.icon-creative-commons-remix:before {
+  content: "\e939";
+}
+
+.icon-creative-commons-share:before {
+  content: "\e93a";
+}
+
+.icon-creative-commons-sharealike:before {
+  content: "\e93b";
+}
+
+.icon-creative-commons:before {
+  content: "\e93c";
+}
+
+
+
+/*#styleguide
+
+aircraft
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-aircraft-landing size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-aircraft-take-off size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-aircraft size color-gray"></i>
+</div>
+
+```
+*/
+.icon-aircraft-landing:before {
+  content: "\e98c";
+}
+.icon-aircraft-take-off:before {
+  content: "\e98d";
+}
+.icon-aircraft:before {
+  content: "\e98e";
+}
+
+
+
+/*#styleguide
+
+emoji
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-emoji-flirt size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-emoji-happy size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-emoji-neutral size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-emoji-sad size color-gray"></i>
+</div>
+
+```
+*/
+.icon-emoji-flirt:before {
+  content: "\e971";
+}
+.icon-emoji-happy:before {
+  content: "\e9cc";
+}
+.icon-emoji-neutral:before {
+  content: "\e9cd";
+}
+.icon-emoji-sad:before {
+  content: "\e9ce";
+}
+
+
+
+/*#styleguide
+
+flow
+
+```
+<div class="icon-wrap ml40">
+  <i class="icon icon-flow-branch size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-flow-cascade size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-flow-line size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-flow-parallel size color-gray"></i>
+</div>
+
+<div class="icon-wrap ml40">
+  <i class="icon icon-flow-tree size color-gray"></i>
+</div>
+
+```
+*/
+.icon-flow-branch:before {
+  content: "\e972";
+}
+.icon-flow-cascade:before {
+  content: "\e973";
+}
+.icon-flow-line:before {
+  content: "\e974";
+}
+.icon-flow-parallel:before {
+  content: "\e975";
+}
+.icon-flow-tree:before {
+  content: "\e976";
+}
+
+
+
+
+
+
+
+
+

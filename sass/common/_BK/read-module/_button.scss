@@ -1,0 +1,385 @@
+/*
+#overview
+button
+
+ボタンのサンプルです
+*/
+
+
+/*#styleguide
+
+
+ノーマルボタン
+
+```
+<button class="select-btn btn-inner large rounded">Large button</button>
+<button class="select-btn btn-inner middle rounded">Middle button</button>
+<button class="select-btn btn-inner small rounded">Small button</button>
+
+```
+*/
+
+/*#styleguide
+
+
+グラデーションボタン
+
+```
+<button class="select-btn btn-inner large rounded gradation">Large button</button>
+<button class="select-btn btn-inner middle rounded gradation">Middle button</button>
+<button class="select-btn btn-inner small rounded gradation">Small button</button>
+
+```
+*/
+
+
+
+/*#styleguide
+
+
+カラーボタン
+
+```
+<button class="select-btn btn-inner middle rounded red">Red button</button>
+<button class="select-btn btn-inner middle rounded green">Green button</button>
+<button class="select-btn btn-inner middle rounded blue">Blue button</button>
+
+```
+*/
+
+
+/*#styleguide
+
+
+カラーグラデーションボタン
+
+```
+<button class="select-btn btn-inner middle rounded gradation-red">Red button</button>
+<button class="select-btn btn-inner middle rounded gradation-green">Green button</button>
+<button class="select-btn btn-inner middle rounded gradation-blue">Blue button</button>
+
+```
+*/
+
+
+
+/*#styleguide
+
+
+アイコン付きボタン(右)
+
+```
+<button class="select-btn btn-inner large rounded tl">
+      Large button<div class="icon-wrap-small">
+      <i class="icon icon-plus small color-green icon-position-right"></i>
+	</div>
+</button>
+
+<button class="select-btn btn-inner middle rounded tl">
+      Middle button<div class="icon-wrap-small">
+      <i class="icon icon-plus small color-green icon-position-right"></i>
+	</div>
+</button>
+
+<button class="select-btn btn-inner small rounded tl">
+      Small button<div class="icon-wrap-small">
+      <i class="icon icon-plus small color-green icon-position-right"></i>
+	</div>
+</button>
+```
+*/
+
+
+
+/*#styleguide
+
+
+アイコン付きボタン(左 / +アイコン)
+
+```
+<button class="select-btn btn-inner large-plus rounded gradation">
+  <div class="icon-wrap-large">
+    <i class="icon icon-plus large icon-position-left"></i>
+  </div>
+  新規キャンペーン発行</button>
+<button class="select-btn btn-inner middle-plus rounded gradation">
+  <div class="icon-wrap-large">
+    <i class="icon icon-plus large icon-position-left"></i>
+  </div>
+  新規キャンペーン発行</button>
+<button class="select-btn btn-inner small-plus rounded gradation">
+  <div class="icon-wrap-large">
+    <i class="icon icon-plus large icon-position-left"></i>
+  </div>
+  新規キャンペーン発行</button>
+
+```
+*/
+
+
+
+
+
+
+
+/*#styleguide
+
+
+アイコンボタン(JP3用)
+
+ボタン横幅32%
+変更する際は_module.scssに追記
+
+```
+
+<div class="iconbtn-wrap w32">
+  <button class="select-btn btn-inner-reset icon-small rounded gradation">
+      <div class="icon-wrap position-center">
+        <i class="icon icon-edit large color-gray icon-center"></i>
+      </div>
+  </button>
+
+  <button class="select-btn btn-inner-reset icon-small rounded gradation">
+      <div class="icon-wrap position-center">
+        <i class="icon icon-creative large color-gray icon-center"></i>
+      </div>
+  </button>
+
+  <button class="select-btn btn-inner-reset icon-small rounded gradation">
+      <div class="icon-wrap position-center">
+        <i class="icon icon-report large color-gray icon-center"></i>
+      </div>
+  </button>
+
+  <button class="select-btn btn-inner-reset icon-small rounded gradation">
+      <div class="icon-wrap position-center">
+        <i class="icon icon-tag large color-gray icon-center"></i>
+      </div>
+  </button>
+
+  <button class="select-btn btn-inner-reset icon-small rounded gradation">
+      <div class="icon-wrap position-center">
+        <i class="icon icon-price-tag large color-gray icon-center"></i>
+      </div>
+  </button>
+
+  <button class="select-btn btn-inner-reset icon-small rounded gradation">
+      <div class="icon-wrap position-center">
+        <i class="icon icon-user large color-gray icon-center"></i>
+      </div>
+  </button>
+
+  <button class="select-btn btn-inner-reset icon-small rounded gradation">
+      <div class="icon-wrap position-center">
+        <i class="icon icon-eye2 large color-gray icon-center"></i>
+      </div>
+  </button>
+
+  <button class="select-btn btn-inner-reset icon-small rounded gradation">
+      <div class="icon-wrap position-center">
+        <i class="icon icon-upload-to-cloud large color-gray icon-center"></i>
+      </div>
+  </button>
+
+  <button class="select-btn btn-inner-reset icon-small rounded gradation">
+      <div class="icon-wrap position-center">
+        <i class="icon icon-thumbs-up large color-gray icon-center"></i>
+      </div>
+  </button>
+
+  <button class="select-btn btn-inner-reset icon-small rounded gradation">
+      <div class="icon-wrap position-center">
+        <i class="icon icon-trash large color-gray icon-center"></i>
+      </div>
+  </button>
+
+</div>
+
+```
+*/
+
+
+.iconbtn-wrap{
+  padding: 8px;
+}
+
+
+/*
+* Btn 共通
+*/
+.select-btn {
+  background: $white;
+  border: 1px solid $borderLightGray;
+  color: $darkGray;
+  margin: 0;
+  position: relative;
+  outline: none;
+  -webkit-appearance: none;
+  @include clearfix;
+  @extend %cursor;
+  @include btnHoverTransition(.3s);
+
+  &:hover {
+    background: $btnHover;
+  }
+
+  &.btn-inner {
+    padding: 0 15px;
+  }
+  &.btn-inner-reset {
+    padding: 0;
+  }
+
+  //テキスト位置
+  &.tl {
+    text-align: left;
+  }
+
+  //ボタンサイズ
+  &.small {
+    width: 156px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  &.middle {
+    width: 186px;
+    height: 34px;
+    font-size: 16px;
+    line-height: 34px;
+  }
+  &.large {
+    width: 216px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+
+  //アイコンボタン
+  &.icon-small {
+    //width: 36px;
+    width: 32%;
+    height: 22px;
+    line-height: 22px;
+  }
+
+  //新規発行ボタンサイズ
+  &.small-plus {
+    width: 192px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-indent: 20px;
+  }
+  &.middle-plus {
+    width: 216px;
+    height: 34px;
+    font-size: 16px;
+    line-height: 34px;
+    text-indent: 18px;
+  }
+  &.large-plus {
+    width: 240px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    text-indent: 16px;
+   }
+
+
+  //角丸
+  &.rounded {
+    border-radius: 4px;
+  }
+
+  //カラー指定
+  &.red {
+    color: $white;
+    background: $btnRed;
+
+    &:hover {
+      background: $btnRedLight;
+    }
+  }
+  &.green {
+    color: $white;
+    background: $btnGreen;
+
+    &:hover {
+      background: $btnGreenLight;
+    }
+  }
+  &.blue {
+    color: $white;
+    background: $btnBlue;
+
+    &:hover {
+      background: $btnBlueLight;
+    }
+  }
+
+  //グラデーション
+  &.gradation {
+    color: $tableFontGray;
+    @include colorGrade($white, $gradationGray);
+    //@include grade($gradationGray);
+
+    //TODO: 吉濱さん！グラデにするとhoverアニメーションが効かないです。。
+    &:hover {
+      @include colorGrade($white, $gradationDarkGray);
+      //@include grade(#e0e0e0);
+    }
+  }
+
+
+  //グラデーション赤
+  &.gradation-red {
+    color: $white;
+    border: 1px solid $borderRed;
+    @include colorGrade($btnRedLight, $btnRed);
+
+    &:hover {
+      @include colorGrade($btnRed, #DE4040);
+    }
+  }
+
+
+  //グラデーション緑
+  &.gradation-green {
+    color: $white;
+    border: 1px solid #008146;
+    @include colorGrade($btnGreenLight, $btnGreen);
+
+    &:hover {
+      @include colorGrade(#41b98b, #038351);
+    }
+  }
+
+  //グラデーション青
+  &.gradation-blue {
+    color: $white;
+    border: 1px solid #214fb6;
+    @include colorGrade($btnBlueLight, $btnBlue);
+
+    &:hover {
+      @include colorGrade(#84a3eb, #3c6fe0);
+    }
+  }
+
+
+  //hoverアニメーション
+  &::before,
+  &::after {
+    @extend %btnHoverAfter;
+  }
+
+  &::before,
+  &::after {
+    @include btnHoverTransition(.3s);
+  }
+
+}
+
+
+

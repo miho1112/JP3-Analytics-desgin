@@ -1,0 +1,45 @@
+<div class="container cf">
+    <div class="logo pointer" ui-sref="dashboard"><h1>.jp3</h1></div>
+
+    <div class="header-nav">
+        <ul>
+            <li><span>Help</span></li>
+            <li><span>Analytics</span></li>
+            <li>
+                <div class="nav-icon fl" ng-click="dh.navControl($event)"></div>
+                <div class="arrow-btn arrow-bottom-position icon small fr" ng-click="dh.navControl($event)">
+                    <a href="">
+                        <i class="arrow-bottom"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!--nav-->
+    <div id="navList" class="header-nav-dropdown close">
+        <ul>
+            <li>
+                <dl>
+                    <dt><span>{{"app.dashboard.header.account" | translate}}</span></dt><dd>{{dh.clientName}}</dd>
+                    <dt><span>{{"app.dashboard.header.group" | translate}}</span></dt><dd>{{dh.userName}}</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>{{"app.dashboard.header.switching" | translate}}</dt>
+                    <dd>
+                        <div class="lang-select">
+                            <div ng-translate-language-select></div>
+                        </div>
+                    </dd>
+                </dl>
+            </li>
+            <li ng-click="dh.logout()"><span>{{"app.dashboard.header.logout" | translate}}</span></li>
+        </ul>
+    </div>
+
+</div>
+<div class="header-border"></div>
+
+

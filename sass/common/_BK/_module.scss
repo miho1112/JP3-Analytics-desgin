@@ -1,0 +1,109 @@
+/**
+* Module Sass
+* ---------------
+* 共通 Module を記載
+*/
+
+@import "read-module/button";
+@import "read-module/table";
+@import "read-module/form";
+@import "read-module/icon";
+@import "read-module/icon-Essential";
+
+
+/*
+* 横幅
+*/
+.w3 {
+  width: 3%;
+}
+.w4 {
+  width: 4%;
+}
+.w5 {
+  width: 5%;
+}
+.w6 {
+  width: 6%;
+}
+.w7 {
+  width: 7%;
+}
+.w8 {
+  width: 8%;
+}
+.w9 {
+  width: 9%;
+}
+.w10 {
+  width: 10%;
+}
+.w11 {
+  width: 11%;
+}
+.w12 {
+  width: 12%;
+}
+.w13 {
+  width: 13%;
+}
+.w14 {
+  width: 14%;
+}
+.w15 {
+  width: 15%;
+}
+.w32 {
+  width: 32%;
+}
+
+
+/*
+* Modal Arrow
+*/
+
+//.arrow {
+//  @include arrow(16px, 2px, #b3b3b3, bottom);
+//  @include arrowPsitionCenter(50%, 20px, 25px);
+//  @extend %cursor;
+//}
+
+
+/*
+* Chart
+*/
+.result-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  background: $white;
+  display: none;
+
+  .result-inner {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 0 150px 0;
+    @include clearfix;
+
+    .close-btn {
+      position: relative;
+      z-index: 30000;
+    }
+
+    .chart-tit {
+      color: $chartFontColor;
+      font-size: 24px;
+      line-height: 24px;
+      border-bottom: 1px solid $chartLineColor;
+      padding: 25px;
+    }
+  }
+
+}
+
+// 位置調整
+.ml40 {
+  margin-left: 40px;
+}
+

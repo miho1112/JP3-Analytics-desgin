@@ -1,0 +1,365 @@
+/*
+* Button
+*/
+
+.btn{
+  @extend %cursor;
+  @include grade($gray-l2, 30);
+  @include line-and-height(31);
+  border-radius: 4px;
+  border       : 1px solid $gray-l7;
+  text-align   : center;
+  display      : inline-block;
+  
+  a {
+    @include fs(14);
+    @extend %cursor;
+    width: 100%;
+    padding: 0 15px;
+    display: inline-block;
+    color: $btn-base-color;
+    font-weight: $font-weight-bold;
+  }
+
+  &:hover {
+    @include colorGrade($white-l1, $gray-l4, vertical)
+  }
+
+  &:active {
+    background: $btn-gray-active;
+  }
+
+  &.selected {
+    background: $gray-l7;
+    cursor: default !important;
+    a {
+      cursor: default !important;
+    }
+  }
+  
+  // color variation
+  &.red {
+    @include colorGrade($btn-red-grade-top, $btn-red-grade-bottom, vertical);
+    border: 1px solid $btn-red-border;
+    &:hover {
+      @include colorGrade($btn-red-grade-top, $btn-red-grade-bottom, vertical);
+    }
+    &:active {
+      background: $btn-red-active;
+    }
+    a {
+      color: $white-l1;
+    }
+  }
+
+  &.blue {
+    @include colorGrade($btn-blue-grade-top, $btn-blue-grade-bottom, vertical);
+    border: 1px solid $btn-blue-border;
+    &:hover {
+      @include colorGrade($btn-blue-grade-top, $btn-blue-grade-bottom, vertical);
+    }
+    &:active {
+      background: $btn-blue-active;
+    }
+    a {
+      color: $white-l1;
+    }
+  }
+
+  // size variation
+  &.full {
+    width: 100%;
+    @include line-and-height(40);
+  }
+
+  &.large {
+    @include line-and-height(40);
+    a {
+      padding: 0 30px !important;
+    }
+  }
+
+  &.small {
+    @include line-and-height(21);
+    a {
+      @include fs(13);
+      padding: 0 5px;
+    }
+    a.fs-small {
+      @include fs(12);
+    }
+  }
+  
+  &.chosen {
+    @include line-and-height(25);
+  }
+
+  // icons
+  &.icon {
+    height: inherit;
+ 
+    a i:before{
+      content: "";
+      display: inline-block;
+      font-family: $icons;
+      position: relative;
+      top: 1px;
+    }
+    
+    &.add-txt a i:before {
+      font-weight: $font-weight-regular;
+      padding: 0 5px 0 0;
+    }
+
+    &.download a i:before    { content: "\e94c"; }
+    &.edit a i:before        { content: "\e9ca"; }
+    &.creative a i:before    { content: "\e9ec"; }
+    &.tags a i:before        { content: "\e90c"; }
+    &.report a i:before      { content: "\e90a"; }
+    &.remove a i:before      { content: "\e980"; }
+    &.preview a i:before     { content: "\e9d2"; }
+    &.new a i:before         { content: "\e909"; }
+    &.upload a i:before      { content: "\e986"; }
+    &.archive a i:before     { content: "\e995"; }
+    &.operator a i:before    { content: "\e90d"; }
+    &.confirmed a i:before   { content: "\ea5b"; }
+    &.check a i:before       { content: "\e9ae"; }
+    &.calendar a:before      { content: "\1f4c5"; }
+    &.print a:before         { content: "\e716"; }
+    &.search a:before        { content: "\1f50d"; }
+    &.arrow-right a:after    { content: "\27a1"; }
+
+  }
+
+  &.input-search {
+    display: inline-block;
+    border : 1px solid $gray-l7;
+    border-radius: 0 4px 4px 0;
+    position : relative;
+    top      : -1px;
+    left     : -1px;
+  }
+
+  &.tag{
+    @include line-and-height(22);
+    width: 95px !important;
+    margin: 0 0 0 6px;
+  }
+
+  &.accordion{
+    @include fs(12);
+    @include appearance(none);
+    @include line-and-height(22);
+    width: 307px;
+    text-indent: 0.8em;
+    &:focus { outline: none; }
+  }
+
+  &.tag, &.accordion {
+    &:after{
+      content: " ";
+      width: 0;
+      height: 0;
+      display: inline-block;
+      float: right;
+      position: relative;
+      border-style: solid;
+    }
+    &.close:after {
+      border-width: 3px 0 3px 5px;
+      border-color: transparent transparent transparent $gray-l12;
+      margin: 0 9px 0 0;
+      top: 6px;
+    }
+    &.open:after {
+      border-width: 5px 3px 0;
+      border-color: $gray-l12 transparent transparent;
+      margin: 0 9px 0 0;
+      top: 7px;
+    }
+  }
+
+  &.calendar{
+    @include line-and-height(32);
+    @include clearfix;
+
+    width: 135px !important;
+    position: relative;
+
+    &.placeholder:empty {
+      &.start:before { content: 'Start date'; }
+      &.end:before   { content: 'End date'; }
+    }
+    
+    &:after{
+      width  : 0;
+      height : 0;
+      content: " ";
+      border-style : solid;
+      border-width : 5px 3px 0 3px;
+      border-color : $gray-l12 transparent transparent transparent;
+      position     : absolute;
+      top          : 13px;
+      right        : 9px;
+    }
+  }
+
+  &.select{
+    .gsm-detail:last-child{
+      border-left: 1px solid #ff0000;
+    }
+  }
+  
+  &.tab{
+    width: 69px !important;
+    border-radius: 0 4px 4px 0;
+  }
+
+  &.tab:first-child{
+    width: 68px !important;
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+  }
+
+  &.tab-invoice{
+    border-radius: 0 4px 4px 0;
+  }
+
+  &.tab-invoice:first-child{
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+  }
+
+  input.submit-btn {
+    display: inline;
+    background: none;
+    border: none !important;
+  }
+
+}
+
+// キャンペーンページ　横並び連続ボタン
+.btn-status-search{
+  @include line-and-height(27);
+  border: 1px solid $gray-l7;
+  border-radius: 4px;
+  
+  li, .btn-archive{
+    width: 80px;
+    text-align: center;
+    float: left;
+    border-left: 1px solid $gray-l7;
+    cursor: pointer;
+    @include grade($gradationGray,30);
+    &:hover{
+      @include colorGrade($gradationGray, $gradationgray-e, vertical);
+    }
+    &.active{
+      color: $white-l1;
+      background: $buttons-related-color-active;
+    }
+  }
+  li:first-child{
+    width: 80px;
+    border-left: none;
+    border-radius: 3px 0 0 3px;
+  }
+  li:last-child {
+    border-radius: 0 3px 3px 0;
+  }
+  .btn-archive {
+    border: none;
+    border-radius: 3px;
+  }
+}
+
+
+// Close btn
+.close-btn, .arrow-btn {
+  @extend %cursor;
+  color: $gray-l12;
+  font-weight: $font-weight-regular;
+  position: absolute;
+  z-index: 3;
+
+  // Size
+  .large {
+    width: 16px;
+    @include line-and-height(16);
+
+    i {
+      @include fs(16);
+    }
+    
+  }
+  &.small {
+    width: 12px;
+    @include line-and-height(12);
+    
+    i {
+      @include fs(12);
+    }
+  }
+  
+  // position
+  &.close-btn-position {
+    top: 20px;
+    right: 20px;
+  }
+
+  &.arrow-bottom-position {
+    top: 20px;
+    right: 0px;
+  }
+  
+  &.icon {
+    display: inline-block;
+    font-family: $icons;
+  }
+  
+  a {
+    @extend %cursor;
+    width: 100%;
+    height: inherit;
+    @include fs(16);
+    line-height: 16px;
+    color: $gray-l15;
+    font-weight: $font-weight-bold;
+    display: inline-block;
+  }
+  i {
+    &.close:before        { content: '\e901'; }
+    &.arrow-top:before    { content: '\e95c'; }
+    &.arrow-right:before  { content: '\e95b'; }
+    &.arrow-bottom:before { content: '\e959'; }
+    &.arrow-left:before   { content: '\e95a'; }
+  }
+}
+
+//Pagenation icon
+.pagenation-icon {
+  @extend %cursor;
+  color: $gray-l12;
+  font-weight: $font-weight-regular;
+  
+  &.icon {
+    font-family: $icons;
+  }
+
+  a {
+    @extend %cursor;
+    width: 35px;
+    @include fs(14);
+    color: $pagenation-arrow;
+    font-weight: $font-weight-bold;
+    display: inline-block;
+  }
+
+  i{
+    &.icon-back-first:before { content: '\e904'; }
+    &.icon-back:before       { content: '\e906'; }
+    &.icon-next:before       { content: '\e907'; }
+    &.icon-next-end:before   { content: '\e905'; }
+  }
+  
+}

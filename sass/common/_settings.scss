@@ -1,0 +1,148 @@
+/** 
+** var setting
+**/
+
+// Image Path 
+$image-path : '../images/';
+
+// Colors
+// Achromatic color
+
+// white
+$white-l1    : #fff;
+$white-l2    : #F9F9F9;
+$white-l3    : #f2f2f2;
+
+// gray
+$gray-l1     : #efefef;
+$gray-l2     : #eee;
+$gray-l3     : #dfdfdf;
+$gray-l4     : #e0e0e0;
+$gray-l5     : #d5d5d5;
+$gray-l6     : #d3d3d3;
+$gray-l7     : #ccc;
+$gray-l8     : #aaa;
+$gray-l9     : #a7a7a7;
+$gray-l10    : #999;
+$gray-l11    : #7d7d7d;
+$gray-l12    : #7a7a7a;
+$gray-l13    : #777;
+$gray-l14    : #666;
+$gray-l15    : #555;
+
+// black
+$black-l1    : #333;
+$black-l2    : #000;
+
+// blue
+$darken-blue : #a9afba;
+
+// Typography List
+/////// color 
+$font-main-color : $gray-l15;
+$font-sub-color  : $gray-l12;
+
+$font-family: "-apple-system, ’Lucida Grande’, ‘Helvetica Neue’, ’Hiragino Kaku Gothic ProN’, ‘游ゴシック’, ’メイリオ’, meiryo, sans-serif, Open Sans";
+$icons: round-icon;
+$font-smoothing: antialiased;
+
+// Chromatic color
+$gradationBlue    : #1b7392;
+$gradationGreen   : #5fb463;
+$gradationGray    : $gray-l1;
+$gradationDarkGray: $gray-l4;
+$gradationGray-s  : $gray-l3;
+$gradationgray-e  : $gray-l6;
+
+// icons color
+$blue   : #6795fb;
+$yellow : #fbce19;
+$red    : #fb6767;
+
+// button 管理
+$btn-base-color  : $gray-l12;
+$btn-gray-active : $gray-l5;
+// tab button pagination 系 管理 
+$buttons-related-color-active: $darken-blue;
+
+
+$primary-color   : #3085d6;
+$secondary-color : #42a35a;
+$info-color      : #4a4d50;
+$danger-color    : #ca3838;
+$warning-color   : #f6b83f;
+$success-color   : #58c026;
+
+// blue
+$btn-blue-border             : #1959ED;
+$btn-blue-active             : #3e76f7;
+$btn-blue-grade-top          : #8EAFFC;
+$btn-blue-grade-bottom       : $blue;
+$btn-blue-grade-hover-top    : $blue;
+$btn-blue-grade-hover-bottom : #4279F7;
+
+// red
+$btn-red-border             : #d83e3e;
+$btn-red-active             : #f73f3f;
+$btn-red-grade-top          : #FF8D8D;
+$btn-red-grade-bottom       : $red;
+$btn-red-grade-hover-top    : $red;
+$btn-red-grade-hover-bottom : #DE4040;
+
+// Pagenation
+$pagenation-arrow : $gray-l9;
+
+// Bg 管理
+$bg-main-color   : $white-l2 !default;
+
+// Progress bar 管理
+$progress-bar-blue : #5799c7;
+$progress-bar_red  : #c75757;
+
+// chosen
+//$chosen-hover-color :$pagenation-arrow !default;
+$chosen-hover-color :$blue;
+
+// modal
+$modal-overlay-color: rgba(0, 0, 0, 0.8);
+$modal-window-color : $white-l1;
+
+// 名残
+$border-color-gray       : $gray-l7;
+$header-color            : $white-l1 !default;
+$very-deep-default-color : $gray-l13;
+
+// Contents width
+$row-max-width: 960px !default;
+
+// Table Color
+$tableThColor        : $gray-l12;
+$tableFontColor      : $gray-l11;
+$tableFontGray       : $gray-l12;
+$tableTrColor        : $gray-l2;
+$invoice-table-color : #c75757;
+
+// Font Weights
+$font-weight-bold     : 700;
+$font-weight-semibold : 600;
+$font-weight-regular  : 400;
+$font-weight-light    : 300;
+
+$header-font-weight : $font-weight-light;
+$type-font-weight   : $font-weight-regular;
+$link-font-weight   : $font-weight-regular;
+$button-font-weight : $font-weight-semibold;
+$tabs-font-weight   : $font-weight-semibold;
+
+// Tooltips
+$tt-min-width : 100px;
+$tt-bgcolor   : $black-l1;
+$tt-position  : top;					// position: top / bottom / left / right
+$tt-align     : left;					// text and caret alignment: left / right
+$tt-pretty    : no;	   				// yes = pretty / no = flat
+
+// Tabs
+$tab-height: 42px;
+
+// Checkbox
+$iconColor: $darken-blue;

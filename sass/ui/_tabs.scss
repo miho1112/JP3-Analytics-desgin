@@ -1,0 +1,134 @@
+/* Tabs */
+
+/*
+* Main tab contents
+*/
+.tabs { display: block; }
+.tab-nav-wrap { border-bottom: 1px solid $gray-l7; }
+.tab-content {
+  display: none;
+  padding:  20px 20px 88px 20px;
+  margin: 20px 10px 94px 10px;
+  background: $white-l1;
+  
+  &.client-tab-mt {
+    margin: 0 10px 40px 10px;
+  }
+  
+  &.active { display: block; }
+}
+
+/*
+* Sub tab contents
+*/
+.sub-tabs-container { display: block; }
+.sub-tab-nav-wrap { width: 100%; }
+.sub-tab-content {
+  display: none;
+  padding: 26px 20px;
+  &.active {
+    display: block;
+  }
+}
+
+/*
+* Tab navigation
+*/
+.tab-nav {
+  @extend %cursor;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: $row-max-width;
+  line-height: 31px;
+  color: $font-main-color;
+  font-family: $font-family;
+  font-weight: $font-weight-semibold;
+
+  // to use : class="tab-nav tab-sub"
+  // サブタブ 小さいやつ
+  &.tab-sub {
+    padding: 0 5px;
+    line-height: 26px;
+    font-weight: $font-weight-regular !important;
+    > li > a {
+      color: $gray-l12 !important;
+      padding: 0 15px;
+    }
+  }
+
+  &.tab-table {
+    padding: 0;
+    line-height: 20px;
+    font-weight: $font-weight-regular;
+    width: inherit !important;
+    
+    > li > a {
+      color: $gray-l12 !important;
+      padding: 0 15px;
+    }
+  }
+
+  &.tab-modal {
+    width: 760px;
+    padding: 0;
+
+  }
+  
+  > li {
+    @include clearfix;
+    display: block;
+    float: left;
+    border-top: 1px solid $gray-l7;
+    border-left: 1px solid $gray-l7;
+    border-bottom: 1px solid $gray-l7;
+    margin: 5px 0;
+
+    &:first-child {
+      @include border-radius(5px 0 0 5px);
+      border-left: 1px solid $gray-l7;
+    }
+
+    &:last-child {
+      @include border-radius(0 5px 5px 0);
+      border-right: 1px solid $gray-l7;
+    }
+
+    &:only-child {
+      @include border-radius(5px);
+      border-left: 1px solid $gray-l7;
+      border-right: 1px solid $gray-l7;
+    }
+    
+    &.active {
+      > a {
+        color: $white-l1 !important;
+        background: $buttons-related-color-active;
+      }
+      > a:hover {
+        color: $white-l1 !important;
+        background: $buttons-related-color-active;
+      }
+    }
+
+    > a {
+      @include line-and-height($tab-height + 1);
+      @include grade($gradationGray, 30);
+      padding: 0 30px;
+      display: block;
+      text-decoration: none;
+      color: $gray-l12;
+
+      &:hover {
+        color: $font-main-color;
+        @include colorGrade($white-l1, $gray-l4, vertical)
+      }
+
+      &:active {
+        color: $white-l1;
+        background: $buttons-related-color-active;
+      }
+
+    }
+  }
+}
+

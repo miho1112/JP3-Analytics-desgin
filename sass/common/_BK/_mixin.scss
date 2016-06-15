@@ -1,0 +1,175 @@
+/**
+* Mixin Sass
+* ---------------
+* 全体利用の共通 MixInを記述
+*/
+
+
+/*
+* Arrow
+*
+* 第1引数: size
+* 第2引数: border 太さ
+* 第3引数: border 色
+* 第4引数: 矢印向き top, right, bottom, left
+*
+*/
+//@mixin arrow( $size:16px,$border:2px, $color:#b3b3b3, $direction:'top') {
+//
+//	width: $size;
+//	height: $size;
+//
+//	@if $direction == 'top' {
+//		border-left: $border solid $color;
+//		border-bottom: $border solid $color;
+//		-webkit-transform: rotate(135deg);
+//		transform: rotate(135deg);
+//	}
+//	@else if $direction == 'right'{
+//		border-left: $border solid $color;
+//		border-bottom: $border solid $color;
+//		-webkit-transform: rotate(-135deg);
+//		transform: rotate(-135deg);
+//	} @else if $direction == 'bottom'{
+//		border-left: $border solid $color;
+//		border-bottom: $border solid $color;
+//		-webkit-transform: rotate(-45deg);
+//		transform: rotate(-45deg);
+//	} @else if $direction == 'left'{
+//		border-left: $border solid $color;
+//		border-bottom: $border solid $color;
+//		-webkit-transform: rotate(45deg);
+//		transform: rotate(45deg);
+//	}
+//	box-sizing: border-box;
+//}
+
+
+
+/*
+* Arrow Position
+*
+* 第1引数: left
+* 第2引数: bottom
+* 第3引数: margin-top
+*
+*/
+//@mixin arrowPsitionCenter($left:50%, $bottom:20px, $margin:25px) {
+//	position: absolute;
+//	left: $left;
+//	bottom: $bottom;
+//	margin-top: $margin;
+//}
+
+
+
+/*
+* Table Arrow
+*
+* 第1引数: size 0
+* 第2引数: size 3px
+* 第3引数: size 5px
+* 第4引数: color
+* 第5引数: 矢印向き top, right, bottom, left
+*
+*/
+@mixin tableArrow($size0: 0, $size3:3px, $size5:5px, $color:#7a7a7a, $direction:'top') {
+
+	@if $direction == 'top' {
+		width: $size0;
+		height: $size0;
+		content: " ";
+		display: inline-block;
+		border-style: solid;
+		border-width: $size0 $size3 $size5 $size3;
+		border-color: transparent transparent $color;
+		position: absolute;
+		top: 13px;
+		right: 8px;
+	} @else if $direction == 'right' {
+		width: $size0;
+		height: $size0;
+		content:" ";
+		display:inline-block;
+		border-style: solid;
+		border-width: $size3 $size0 $size3 $size5;
+		border-color: transparent transparent transparent $color;
+		position: absolute;
+		top: 13px;
+		right: 8px;
+	} @else if $direction == 'bottom' {
+		width: $size0;
+		height: $size0;
+		content:" ";
+		display:inline-block;
+		border-style: solid;
+		border-width: $size5 $size3 $size0 $size3;
+		border-color: $color transparent transparent;
+		position: absolute;
+		top: 13px;
+		right: 8px;
+	} @else if $direction == 'left' {
+		width: $size0;
+		height: $size0;
+		content:" ";
+		display:inline-block;
+		border-style: solid;
+		border-width: $size3 $size5 $size3 $size0;
+		border-color: transparent $color transparent transparent;
+		position: absolute;
+		top: 13px;
+		right: 8px;
+	}
+}
+
+
+
+/*
+* Loader
+* 第1引数: background-color
+* 第2引数: animation-delay
+*
+*/
+@mixin loader($background: #000, $delay:0.5s){
+	background-color: $background;
+    animation-delay: $delay;
+}
+
+
+
+/*
+* Gradation
+* 第1引数: color
+*
+*
+*/
+@mixin grade($color: #ccc){
+	@include background-image(linear-gradient(top, lighten($color,30), $color));
+	@include filter-gradient(lighten($color,30), $color, vertical); //IE用の記述
+}
+
+/*
+* Color Gradation
+* 第1引数: color
+*
+*
+*/
+@mixin colorGrade($color1: #ff0000, $color2: #000){
+	@include background-image(linear-gradient($color1, $color2));
+	@include filter-gradient(lighten($color1,30), $color2, vertical); //IE用の記述
+}
+
+
+/*
+* Btn Hover Animation
+* 第1引数: 秒数
+*
+*
+*/
+@mixin btnHoverTransition($Second:.3s) {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all $Second;
+	transition: all $Second;
+}

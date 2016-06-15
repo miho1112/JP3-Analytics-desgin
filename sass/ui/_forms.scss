@@ -1,0 +1,341 @@
+/* Form Styles */
+
+// form *Chrome デフォルト値解除
+input, textarea {
+  border: 1px solid $gray-l7 !important;
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    background-color: $white-l1 !important;
+  }
+}
+
+// 選択時 枠線を削除
+input { outline: none; }
+
+// formベース
+form {
+  label {
+    display: block;
+    @include fs(16);
+    
+    &.inline {
+      display: inline-block;
+      padding-right: 20px;
+    }
+  }
+  dt {
+    margin: 0;
+  }
+  textarea {
+    height: 150px;
+  }
+  ul, ul li {
+    margin-left: 0;
+    list-style-type: none;
+  }
+}
+
+
+.field {
+  @include fs(16);
+  position: relative;
+  max-width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  &.metro, .metro {
+    @include border-radius(0);
+  }
+  input, input[type="*"], textarea {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    resize: none;
+    -webkit-appearance: none;
+    font-family: $font-family;
+    font-weight: $font-weight-light;
+    @include fs(16);
+    @include box-shadow(none);
+  }
+  .input {
+    padding: 10px;
+    background: $white-l1;
+    border: 1px solid darken($white-l3, 10%);
+    @include line-and-height(34);
+    @include fs(16);
+    @include border-radius(4px);
+    position: relative;
+
+    &.search {
+      @include line-and-height(34);
+      @include shape(oval);
+      padding-right: 0;
+    }
+  }
+  .input.textarea {
+    @include fs(13);
+    height: auto;
+    line-height: 1.9rem;
+    
+    &.draft-tag {
+      height: 400px;
+    }
+  }
+}
+
+.btn-search{
+  @include fs(16);
+  min-width: 219px;
+  height: 31px;
+  white-space: nowrap;
+  position: relative;
+  vertical-align: middle;
+  overflow: hidden;
+
+  form {
+    @include fs(0);
+  }
+
+  input{
+    @include line-and-height(31);
+    @include fs(14);
+    width: 163px;
+    border-radius: 4px 0 0 4px;
+    padding: 8px;
+  }
+
+}
+
+
+//fromチェックボックス
+form, .modal-checkbox {
+  
+  &.checkBox-form{
+    display: inline-block;
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    label {
+      @include fs(14);
+      position: relative;
+      display: inline-block;
+      padding: 0 0 0 22px;
+      cursor: pointer;
+      -webkit-transition: all .2s;
+      transition: all .2s;
+      @include fs(14);
+      line-height: 22px;
+      color: $font-main-color;
+      text-indent: 10px;
+
+      &.checkbox-count::before {
+        top: 50%;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        margin: -16px 0 0 0px;
+        background: $white-l1;
+        border: 1px solid $gray-l8;
+        border-radius: 4px;
+      }
+
+      &.checkbox-count::after {
+        opacity: 0;
+        top: 50%;
+        left: 5px;
+        width: 10px;
+        height: 5px;
+        margin: -10px 0 0 0;
+        border-left: 2px solid $darken-blue;
+        border-bottom: 2px solid $darken-blue;
+        -webkit-transform: rotate(-45deg) scale(0.5);
+        transform: rotate(-45deg) scale(0.5);
+      }
+    }
+    label::before,
+    label::after {
+      position: absolute;
+      content: '';
+      -webkit-transition: all .2s;
+      transition: all .2s;
+    }
+    label::before {
+      top: 50%;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      margin: -11px 0 0 0px;
+      background: $white-l1;
+      border: 1px solid $gray-l8;
+      border-radius: 4px;
+    }
+    label::after {
+      opacity: 0;
+      top: 50%;
+      left: 5px;
+      width: 10px;
+      height: 5px;
+      margin: -5px 0 0 0;
+      border-left: 2px solid $gray-l12;
+      border-bottom: 2px solid $gray-l12;
+      -webkit-transform: rotate(-45deg) scale(0.5);
+      transform: rotate(-45deg) scale(0.5);
+    }
+    label:hover::before {
+      background: $white-l1;
+    }
+    input[type="checkbox"]:checked + label::before {
+      background: $white-l1;
+    }
+    input[type="checkbox"]:checked + label::after {
+      opacity: 1;
+      -webkit-transform: rotate(-45deg) scale(1);
+      transform: rotate(-45deg) scale(1);
+    }
+  }
+}
+
+
+/* フェード */
+.fade-animate.ng-enter,
+.fade-animate.ng-leave,
+.fade-animate.ng-move {
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+  position: absolute;
+}
+
+.fade-animate.ng-enter {
+  position: relative;
+  opacity: 0;
+}
+
+.fade-animate.ng-enter.ng-enter-active {
+  position: absolute;
+  opacity: 1;
+}
+
+.fade-animate.ng-leave {
+  position: relative;
+  opacity: 1;
+}
+
+.fade-animate.ng-leave.ng-leave-active {
+  position: absolute;
+  opacity: 1;
+}
+
+//input, .input {
+//  @each $width in $field-sizes {
+//    &.#{nth($width, 1)} {
+//      @include input-size(#{nth($width, 1)});
+//      margin:0;
+//      &:last-child {
+//        margin-left: -4px;
+//      }
+//      &:first-child {
+//        //margin-right: 3.94%;
+//        margin-left: 0;
+//      }
+//      &:first-child:last-child {
+//        margin: 0;
+//      }
+//    }
+//  }
+//}
+//
+//label + {
+//  @include input-sizes-list() {
+//    &:last-child {
+//      margin-left: 0;
+//    }
+//  }
+//}
+//
+//@include respond(document-width) {
+//  .xxwide:first-child, .xxwide:last-child {
+//    margin-right: 0%;
+//  }
+//}
+
+/* remove inline-block white-space — A 0px fs = 0px of white space */
+//.prepend, .append {
+//  fs: 0;
+//  white-space: nowrap;
+//  //padding-bottom: 3.5px;　// yoshi
+//}
+//
+.prepend input,
+.prepend .input,
+.append input,
+.append .input {
+  display: inline-block;
+  max-width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.field {
+  input, .input, textarea, .textarea, .radio span, .checkbox span, .picker {
+    @include transition-duration(.2s);
+  }
+  &.warning {
+    > input {
+      border: 1px solid $warning-color !important;
+    }
+    &:after {
+      position: absolute;
+      top: 30%;
+      right: 15px;
+      z-index: 999;
+      display: inline-block;
+      font-family: $icons;
+      color: $warning-color;
+      content: '\e93f';
+    }
+  }
+  &.danger {
+    > input {
+      border: 1px solid $danger-color !important;
+    }
+    &:after {
+      position: absolute;
+      top: 30%;
+      right: 15px;
+      z-index: 999;
+      display: inline-block;
+      font-family: $icons;
+      color: $danger-color;
+      content: '\e901';
+    }
+  }
+}
+
+
+.field .text input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+// checkboxes/radio buttons only styled where JS supported
+.no-js {
+  .radio input {
+    -webkit-appearance: radio;
+    margin-left: 1px;
+  }
+  .checkbox input {
+    -webkit-appearance: checkbox;
+  }
+  .radio input, .checkbox input {
+    display: inline-block;
+    width: 16px;
+  }
+}
+
+
+.field .text input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
